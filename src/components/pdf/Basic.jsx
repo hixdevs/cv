@@ -1,24 +1,17 @@
 import React from "react"
-import {
-  Document,
-  Page,
-  Text,
-  View
-} from "@react-pdf/renderer";
+import { Document, Page, Text, View } from "@react-pdf/renderer"
 
-import styles from "../../styles/pdf/basic"
+import styles from "../../styles/pdf/Basic"
+import MainBox from "./MainBox"
+import SideBar from "./SideBar"
 
 const PdfBasic = (
   <Document>
     <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Hello World!</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>We're inside a PDF!</Text>
-      </View>
+      <MainBox />
+      <SideBar />
     </Page>
   </Document>
-);
+)
 
 export default PdfBasic

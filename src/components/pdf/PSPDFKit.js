@@ -1,18 +1,18 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 export default class PSPDFKit extends Component {
-  containerRef = React.createRef();
+  containerRef = React.createRef()
 
   componentDidMount() {
-    const url = URL.createObjectURL(this.props.blob);
+    const url = URL.createObjectURL(this.props.blob)
     window.PSPDFKit.load({
       document: url,
-      container: this.containerRef.current
-    });
+      container: this.containerRef.current,
+    })
   }
 
   componentWillUnmount() {
-    window.PSPDFKit.unload(this.containerRef.current);
+    window.PSPDFKit.unload(this.containerRef.current)
   }
 
   render() {
@@ -21,6 +21,6 @@ export default class PSPDFKit extends Component {
         ref={this.containerRef}
         style={{ width: "100%", height: "100%", position: "absolute" }}
       />
-    );
+    )
   }
 }
