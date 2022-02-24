@@ -1,7 +1,7 @@
-import { View, Text, Link, Image } from "@react-pdf/renderer"
+import { View, Text, Link } from "@react-pdf/renderer"
 import React from "react"
 import styles from "../../styles/pdf/Contact"
-import { AiOutlineMail } from "react-icons/ai"
+// import { AiOutlineMail } from "react-icons/ai"
 
 const Contact = () => {
   return (

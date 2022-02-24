@@ -6,31 +6,37 @@ export default StyleSheet.create({
   ...global,
   container: {
     fontSize: 13,
-    display: "flex",
-
+    textAlign: "center",
     flexDirection: "column",
     margin: "20 auto",
     width: "90%",
     height: "auto",
-    backgroundColor: "#e6f2ff",
-    border: "2px solid gray",
+    // backgroundColor: "#e6f2ff",
+    // border: "2px solid gray",
   },
 
   image: {
     maxWidth: "100%",
     height: "auto",
     margin: "0 auto",
-    backgroundColor: "white",
+    backgroundColor: "gray",
   },
 
   name: {
-    display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    maxWidth: "100%",
-    fontSize: 22,
+    maxWidth: "90%",
+    fontSize: 25,
+    fontWeight: "700",
+    lineHeight: 1.2,
+
     padding: "10 0",
     textTransform: "uppercase",
+  },
+
+  title: {
+    fontSize: 18,
+    marginBottom: 8,
   },
 })

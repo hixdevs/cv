@@ -5,9 +5,10 @@ import global from "./global"
 export default StyleSheet.create({
   ...global,
 
-  mainBox: {
+  container: {
     display: "flex",
-    backgroundColor: "#e6f2ff",
+    backgroundColor: "#f5f0eb",
+    color: "#333333",
     width: "65%",
   },
 })

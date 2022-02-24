@@ -7,8 +7,14 @@ export default StyleSheet.create({
 
   container: {
     display: "flex",
-    borderRight: "3px solid #c2c2d6",
-    backgroundColor: "#e0e0eb",
+    backgroundColor: "#423939",
+    color: "white",
     width: "35%",
+  },
+
+  layout: {
+    display: "flex",
+    width: "95%",
+    margin: "0 auto",
   },
 })

@@ -9,12 +9,9 @@ export default StyleSheet.create({
     margin: "10 auto",
     width: "90%",
     height: "auto",
-    border: "1px solid gray",
-    backgroundColor: "white",
-  },
+    borderTop: "3px solid #fff5f5",
 
-  title: {
-    fontSize: 20,
-    marginBottom: 8,
+    // border: "1px solid gray",
+    // backgroundColor: "white",
   },
 })

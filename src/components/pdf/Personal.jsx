@@ -1,7 +1,6 @@
 import { View, Text, Image } from "@react-pdf/renderer"
 import React from "react"
 import styles from "../../styles/pdf/Personal"
-import Contact from "./Contact"
 
 const Personal = () => {
   return (
@@ -10,8 +9,11 @@ const Personal = () => {
         <Image src="../../../public/img/profile.jpg" />
       </View>
       <View style={styles.name}>
-        <Text>Olagusia </Text>
-        <Text>Plagusia</Text>
+        <Text>Wiktor </Text>
+        <Text>Plaga</Text>
+      </View>
+      <View>
+        <Text style={styles.title}>Software Engineer</Text>
       </View>
     </View>
   )

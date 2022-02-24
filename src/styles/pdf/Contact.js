@@ -11,11 +11,11 @@ export default StyleSheet.create({
     padding: "2 0",
     margin: "0 auto",
     height: "auto",
-    backgroundColor: "white",
-    border: "1px solid gray",
+    // backgroundColor: "white",
+    borderTop: "3px solid #fff5f5",
   },
   email: {
-    color: "black",
+    color: "#fff2e6",
     textDecoration: "none",
     lineHeight: 1.3,
   },
@@ -26,10 +26,5 @@ export default StyleSheet.create({
     flexWrap: "wrap",
     paddingTop: 10,
     lineHeight: 1.3,
-  },
-
-  title: {
-    fontSize: 20,
-    marginBottom: 8,
   },
 })
