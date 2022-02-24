@@ -6,6 +6,7 @@ import { AiOutlineMail } from "react-icons/ai"
 const Contact = () => {
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Contact</Text>
       <Link style={styles.email} href="mailto:mowianamnieola@gmail.com">
         mowianamnieola@gmail.com
       </Link>

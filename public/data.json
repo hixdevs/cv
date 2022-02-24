@@ -1,0 +1,44 @@
+{
+   "sideBar": {
+       "personal": {
+           "firstName": "Wiktor",
+           "lastName": "Plaga",
+           "photo": "profile.jpg"
+       }, 
+       "contact": {
+           "email": "wscourge@gmail.com",
+           "phone": "+48 732 642 360",
+           "address": {
+               "street": "Filipowska 5",
+               "city": "Warszawa",
+               "postCode": "16-423",
+               "state": "Mazowsze",
+               "country": "Poland"
+           }
+       },
+       "technologies": [
+           ["Ruby", "Ruby on Rails", "Sinatra"], 
+           ["Node", "Ember", "React", "jQuery"],
+           ["React Native"],
+           ["HTML", "CSS", "SCSS"],
+           ["MariaDB", "MySQL", "Postgres"],
+           ["Redis", "Mongo", "Firestore"],
+           ["Git"],
+           ["Docker", "Linux", "Nginx"],
+           ["PHP", "Wordpress", "Oxygen"]
+        ], 
+        "interests": [
+            ["UI & UX Design"], 
+            ["Economy"], 
+            ["Fantasy", "Sci-fi", "True Crime"], 
+            ["Calisthenics", "Rowing", "Table tennis", "Squash", "Badminton"]
+        ],
+        "rodo": "rodo clausle text"
+    },
+    "mainBox": {
+        "description": "Software Engineer with demonstrated experience in both code development and maintenance. Possesses a strong ability to identify issues and offer creative solutions to complex problems, based on effective research, data analysis, and compelling communication. Eagers to learn new technologies, chooses best fit for the requirement.",
+        "experience": {
+            
+        }
+    }
+}

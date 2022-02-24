@@ -27,4 +27,9 @@ export default StyleSheet.create({
     paddingTop: 10,
     lineHeight: 1.3,
   },
+
+  title: {
+    fontSize: 20,
+    marginBottom: 8,
+  },
 })
