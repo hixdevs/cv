@@ -6,15 +6,14 @@ export default StyleSheet.create({
   ...global,
 
   container: {
+    fontSize: 10,
     display: "flex",
-    // borderTop: "2px solid #4d3319",
-
-    // border: "1px solid black",
-    // backgroundColor: "white",
     padding: "5 10",
+
+    // padding: "0 20",
     margin: "20 auto 0",
-    width: "95%",
+    width: "90%",
     height: "auto",
-    fontSize: 13,
+    lineHeight: 1.2,
   },
 })

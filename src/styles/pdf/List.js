@@ -6,14 +6,13 @@ export default StyleSheet.create({
   ...global,
 
   item: {
-    fontSize: 13,
     marginBottom: 2,
     flexDirection: "row",
     alignItems: "center",
   },
   bulletPoint: {
-    width: 10,
-    fontSize: 10,
+    width: 13,
+    fontSize: 8,
     paddingLeft: 2,
   },
 

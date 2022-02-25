@@ -6,7 +6,7 @@ import List, { Item } from "./List"
 const Technologies = ({ data }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Technologies</Text>
+      <Text style={styles.heading}>Technologies</Text>
       <List>
         {data.map((technologies, i) => (
           <Item key={i}>{technologies.join(" ")}</Item>

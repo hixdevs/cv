@@ -1,6 +1,6 @@
 export default {
-  title: {
-    fontSize: 20,
+  heading: {
+    fontSize: 15,
     marginBottom: 8,
   },
 }

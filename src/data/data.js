@@ -17,17 +17,7 @@ export default {
         country: "Poland",
       },
     },
-    technologies: [
-      ["Ruby", "Ruby on Rails", "Sinatra"],
-      ["Node", "Ember", "React", "jQuery"],
-      ["React Native"],
-      ["HTML", "CSS", "SCSS"],
-      ["MariaDB", "MySQL", "Postgres"],
-      ["Redis", "Mongo", "Firestore"],
-      ["Git"],
-      ["Docker", "Linux", "Nginx"],
-      ["PHP", "Wordpress", "Oxygen"],
-    ],
+
     interests: [
       ["UI & UX Design"],
       ["Economy"],
@@ -42,6 +32,7 @@ export default {
     experience: [
       {
         company: "Material Design for Bootstrap",
+        link: "https://mdbootstrap.com/",
         title: "Software Engineer",
         years: "August 2016 - July 2018",
         tasks: [
@@ -54,6 +45,7 @@ export default {
       },
       {
         company: "Punkta",
+        link: "https://punkta.pl/",
         title: "Software Engineer",
         years: "August 2018 - May 2020",
         tasks: [
@@ -67,6 +59,7 @@ export default {
       },
       {
         company: "Joompin",
+        link: "https://joompin.pl/",
         title: "Co-Founder",
         years: "October 2018 - November 2020",
         tasks: [
@@ -78,6 +71,7 @@ export default {
       },
       {
         company: "Hix on Rails",
+        link: "https://hixonrails.com/",
         title: "Co-Founder",
         years: "November 2019 - Now",
         tasks: [
@@ -91,6 +85,7 @@ export default {
       },
       {
         company: "YND",
+        link: "https://ynd.co/",
         title: "Software Engineer",
         years: "May 2020 - October 2020",
         tasks: [
@@ -103,6 +98,7 @@ export default {
       },
       {
         company: "Greenbits",
+        link: "https://greenbits.com/",
         title: "Software Engineer",
         years: "October 2020 - Now",
         tasks: [
@@ -114,31 +110,42 @@ export default {
         ],
       },
     ],
+    technologies: [
+      ["Ruby", "Ruby on Rails", "Sinatra"],
+      ["Node", "Ember", "React", "jQuery"],
+      ["React Native"],
+      ["HTML", "CSS", "SCSS"],
+      ["MariaDB", "MySQL", "Postgres"],
+      ["Redis", "Mongo", "Firestore"],
+      ["Git"],
+      ["Docker", "Linux", "Nginx"],
+      ["PHP", "Wordpress", "Oxygen"],
+    ],
+    related: [
+      {
+        name: "GitHub",
+        url: "https://github.com/wscourge",
+      },
+      {
+        name: "GitLab",
+        url: "https://gitlab.com/wscourge",
+      },
+      {
+        name: "Stack Overflow",
+        url: "https://stackoverflow.com/users/6439240/user3221",
+      },
+      {
+        name: "Blog on Ruby on Rails configuration",
+        url: "https://hixonrails.com/ruby-on-rails-tutorials",
+      },
+      {
+        name: "Warsaw Ruby Users Group Talk",
+        url: "https://www.youtube.com/watch?v=nOb_JGk8ojc",
+      },
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
+      },
+    ],
   },
-  related: [
-    {
-      name: "GitHub",
-      url: "https://github.com/wscourge",
-    },
-    {
-      name: "GitLab",
-      url: "https://gitlab.com/wscourge",
-    },
-    {
-      name: "Stack Overflow",
-      url: "https://stackoverflow.com/users/6439240/user3221",
-    },
-    {
-      name: "Blog on Ruby on Rails configuration",
-      url: "https://hixonrails.com/ruby-on-rails-tutorials",
-    },
-    {
-      name: "Warsaw Ruby Users Group Talk",
-      url: "https://www.youtube.com/watch?v=nOb_JGk8ojc",
-    },
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
-    },
-  ],
 }
