@@ -10,13 +10,13 @@ import Technologies from "./Technologies"
 const SideBar = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.layout}>
-        <Personal />
-        <Contact />
-        <Technologies />
-        <Interests />
-        <Rodo />
-      </View>
+      {/* <View style={styles.layout}> */}
+      <Personal />
+      <Contact />
+      <Technologies />
+      <Interests />
+      <Rodo />
+      {/* </View> */}
     </View>
   )
 }
