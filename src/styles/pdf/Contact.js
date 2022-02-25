@@ -18,6 +18,7 @@ export default StyleSheet.create({
     color: "#fff2e6",
     textDecoration: "none",
     lineHeight: 1.3,
+    textTransform: "uppercase",
   },
 
   address: {

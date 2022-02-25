@@ -7,16 +7,16 @@ import styles from "../../styles/pdf/SideBar"
 import Rodo from "./Rodo"
 import Technologies from "./Technologies"
 
-const SideBar = () => {
+const SideBar = ({ data }) => {
+  const { personal, contact, technologies, interests, rodo } = data
+
   return (
     <View style={styles.container}>
-      {/* <View style={styles.layout}> */}
-      <Personal />
-      <Contact />
-      <Technologies />
-      <Interests />
-      <Rodo />
-      {/* </View> */}
+      <Personal data={personal} />
+      <Contact data={contact} />
+      <Technologies data={technologies} />
+      <Interests data={interests} />
+      <Rodo data={rodo} />
     </View>
   )
 }

@@ -2,18 +2,23 @@ import { View, Text, Image } from "@react-pdf/renderer"
 import React from "react"
 import styles from "../../styles/pdf/Personal"
 
-const Personal = () => {
+const Personal = ({ data }) => {
+  console.log("data:", data)
+
+  const { firstName, lastName, photo, title } = data
+
   return (
     <View style={styles.container}>
       <View style={styles.image}>
-        <Image src="../../../public/img/profile.jpg" />
+        {/* for Image see: https://react-pdf.org/components#source-object */}
+        <Image src={`../../../public/img/${photo}`} />
       </View>
       <View style={styles.name}>
-        <Text>Wiktor </Text>
-        <Text>Plaga</Text>
+        <Text>{firstName} </Text>
+        <Text>{lastName}</Text>
       </View>
       <View>
-        <Text style={styles.title}>Software Engineer</Text>
+        <Text style={styles.title}>{title}</Text>
       </View>
     </View>
   )

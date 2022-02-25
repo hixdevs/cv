@@ -3,14 +3,13 @@ import React from "react"
 import styles from "../../styles/pdf/Technologies"
 import List, { Item } from "./List"
 
-const Technologies = () => {
-  const skills = ["ccok", "koko", "koaksodjidj", "ccok"]
+const Technologies = ({ data }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Technologies</Text>
       <List>
-        {skills.map((skill, i) => (
-          <Item key={i}>{skill}</Item>
+        {data.map((technologies, i) => (
+          <Item key={i}>{technologies.join(" ")}</Item>
         ))}
       </List>
     </View>

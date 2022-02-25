@@ -5,8 +5,6 @@ import PSPDFKit from "./components/pdf/PSPDFKit"
 import BasicPDF from "./components/pdf/Basic"
 import data from "./data/data.js"
 
-import "./styles/page.css"
-
 ReactDOM.render(
   <BlobProvider document={<BasicPDF data={data} />}>
     {({ blob, url, loading, error }) => {

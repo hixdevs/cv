@@ -3,20 +3,21 @@ import React from "react"
 import styles from "../../styles/pdf/Contact"
 // import { AiOutlineMail } from "react-icons/ai"
 
-const Contact = () => {
+const Contact = ({ data }) => {
+  const { email, address, phone } = data
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Contact</Text>
-      <Link style={styles.email} href="mailto:mowianamnieola@gmail.com">
-        mowianamnieola@gmail.com
+      <Link style={styles.email} href={`mailto:${email}`}>
+        {email}
       </Link>
-      <Text>792 808 932</Text>
+      <Text>{phone}</Text>
       <View style={styles.address}>
-        <Text>Filipowska 5, </Text>
-        <Text>16-423 </Text>
-        <Text>Bakalarzewo, </Text>
-        <Text>Podlsaskie, </Text>
-        <Text>Polska</Text>
+        <Text>{address.street}, </Text>
+        <Text>{address.postCode}, </Text>
+        <Text>{address.city}, </Text>
+        <Text>{address.state}, </Text>
+        <Text>{address.country}</Text>
       </View>
     </View>
   )

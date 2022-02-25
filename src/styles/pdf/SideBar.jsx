@@ -1,13 +1,19 @@
-import { StyleSheet } from "@react-pdf/renderer"
-
+import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
+import Oswald from "../../Oswald.ttf"
+
+Font.register({
+  family: "Oswald",
+  src: Oswald,
+})
 
 export default StyleSheet.create({
   ...global,
 
   container: {
+    fontFamily: "Oswald",
     display: "flex",
-    backgroundColor: "#423939",
+    backgroundColor: "#42413e",
     color: "white",
     width: "35%",
   },

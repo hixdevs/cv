@@ -5,12 +5,15 @@ import Experience from "./Experience"
 import styles from "../../styles/pdf/MainBox"
 import Description from "../../components/pdf/Description"
 
-const MainBox = () => {
+const MainBox = ({ data }) => {
+  const { description, experience, education } = data
+  console.log("data:", data)
+
   return (
     <View style={styles.container}>
-      <Description />
-      <Experience />
-      <Education />
+      <Description data={description} />
+      <Experience data={experience} />
+      <Education education={education} />
     </View>
   )
 }

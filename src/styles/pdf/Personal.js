@@ -11,15 +11,12 @@ export default StyleSheet.create({
     margin: "20 auto",
     width: "90%",
     height: "auto",
-    // backgroundColor: "#e6f2ff",
-    // border: "2px solid gray",
   },
 
   image: {
     maxWidth: "100%",
     height: "auto",
     margin: "0 auto",
-    backgroundColor: "gray",
   },
 
   name: {
