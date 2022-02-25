@@ -11,7 +11,7 @@ const Experience = ({ data }) => {
       <Text style={styles.heading}>Experience</Text>
       <View>
         {data.map((job, idx) => (
-          <View style={styles.job} key={idx}>
+          <View key={idx}>
             <View style={styles.header}>
               <Link style={styles.company} href={job.link}>
                 {job.company}

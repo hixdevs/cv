@@ -8,7 +8,7 @@ export default StyleSheet.create({
   container: {
     fontSize: 10,
     display: "flex",
-    margin: "10 auto",
+    margin: "0 auto",
     padding: "5 10",
     width: "90%",
     height: "auto",
@@ -18,23 +18,23 @@ export default StyleSheet.create({
   company: {
     textDecoration: "none",
     color: "#3489e3",
-    marginBottom: 8,
+    marginBottom: 7,
+    marginTop: 7,
   },
 
   header: {
+    alignItems: "center",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
   },
 
-  job: {
-    marginBottom: 8,
-  },
   years: {
     textTransform: "uppercase",
   },
-
-  list: {
-    fontSize: 5,
+  heading: {
+    fontSize: 12,
+    textTransform: "uppercase",
+    color: "#d6bc90",
   },
 })

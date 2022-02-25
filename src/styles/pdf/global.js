@@ -1,6 +1,7 @@
 export default {
   heading: {
-    fontSize: 15,
-    marginBottom: 8,
+    // fontSize: 12,
+    // textTransform: "uppercase",
+    // color: "#d6bc90",
   },
 }
