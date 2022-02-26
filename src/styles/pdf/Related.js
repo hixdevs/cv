@@ -6,6 +6,8 @@ export default StyleSheet.create({
   ...global,
 
   container: {
+    margin: "20 auto",
+    padding: "0 10",
     display: "flex",
     width: "90%",
     height: "auto",
@@ -13,13 +15,14 @@ export default StyleSheet.create({
 
   source: {
     textDecoration: "none",
-    color: "#3489e3",
+    color: "#54b2ff",
     lineHeight: 1.5,
   },
   heading: {
+    letterSpacing: 1.5,
     fontSize: 12,
     textTransform: "uppercase",
     marginBottom: 5,
-    color: "#d6bc90",
+    color: "#d4b88a",
   },
 })

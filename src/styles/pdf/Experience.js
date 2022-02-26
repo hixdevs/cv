@@ -33,8 +33,10 @@ export default StyleSheet.create({
     textTransform: "uppercase",
   },
   heading: {
+    letterSpacing: 1.5,
     fontSize: 12,
     textTransform: "uppercase",
-    color: "#d6bc90",
+    color: "#d4b88a",
+    marginTop: 5,
   },
 })

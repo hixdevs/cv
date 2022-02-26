@@ -1,16 +1,17 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
-import Ubuntu from "../../Ubuntu.ttf"
+import OpenSans from "../../OpenSans.ttf"
 
 Font.register({
-  family: "Ubuntu",
-  src: Ubuntu,
+  family: "OpenSans",
+  src: OpenSans,
 })
 export default StyleSheet.create({
   ...global,
 
   container: {
-    fontFamily: "Ubuntu",
+    fontSize: 9,
+    fontFamily: "OpenSans",
     display: "flex",
     backgroundColor: "#42413e",
     color: "white",

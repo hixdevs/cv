@@ -9,14 +9,10 @@ export default StyleSheet.create({
     marginBottom: 2,
     flexDirection: "row",
     alignItems: "center",
+    paddingRight: 15,
   },
   bulletPoint: {
-    width: 13,
+    width: 10,
     fontSize: 8,
-    paddingLeft: 2,
-  },
-
-  content: {
-    // fontSize: "20px",
   },
 })

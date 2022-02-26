@@ -7,13 +7,11 @@ const Related = ({ data }) => {
     <View style={styles.container}>
       <Text style={styles.heading}>Related</Text>
       <View>
-        {data
-          ? data.map((source, idx) => (
-              <Link style={styles.source} key={idx} href={source.url}>
-                {source.name}
-              </Link>
-            ))
-          : null}
+        {data.map((source, idx) => (
+          <Link style={styles.source} key={idx} href={source.url}>
+            {source.name}
+          </Link>
+        ))}
       </View>
     </View>
   )

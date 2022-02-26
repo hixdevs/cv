@@ -17,9 +17,7 @@ const Personal = ({ data }) => {
         <Text>{firstName} </Text>
         <Text>{lastName}</Text>
       </View>
-      <View>
-        <Text style={styles.title}>{title}</Text>
-      </View>
+      <View>{title ? <Text style={styles.title}>{title}</Text> : null}</View>
     </View>
   )
 }

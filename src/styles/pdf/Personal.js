@@ -1,13 +1,17 @@
-import { StyleSheet } from "@react-pdf/renderer"
-
+import { StyleSheet, Font } from "@react-pdf/renderer"
+import OpenSansSemiBold from "../../OpenSansSemiBold.ttf"
 import global from "./global"
+
+Font.register({
+  family: "OpenSansSemiBold",
+  src: OpenSansSemiBold,
+})
 
 export default StyleSheet.create({
   ...global,
   container: {
-    fontSize: 13,
-    textAlign: "center",
     flexDirection: "column",
+    padding: "0 10",
     margin: "20 auto",
     width: "90%",
     height: "auto",
@@ -17,23 +21,26 @@ export default StyleSheet.create({
     maxWidth: "100%",
     height: "auto",
     margin: "0 auto",
+    // backgroundColor: "white",
   },
 
   name: {
+    color: "#edd09d",
+    fontFamily: "OpenSansSemiBold",
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "center",
     maxWidth: "90%",
-    fontSize: 25,
-    fontWeight: "700",
-    lineHeight: 1.2,
-
+    fontSize: 26,
+    letterSpacing: 1.5,
+    lineHeight: 1.4,
     padding: "10 0",
     textTransform: "uppercase",
   },
 
   title: {
-    fontSize: 18,
-    marginBottom: 8,
+    textTransform: "uppercase",
+    fontSize: 10,
+    marginBottom: 10,
+    letterSpacing: 2.5,
   },
 })

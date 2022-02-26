@@ -7,13 +7,21 @@ export default StyleSheet.create({
   container: {
     display: "flex",
     margin: "0 auto",
+    padding: "5 10",
     width: "90%",
     height: "auto",
   },
+
   heading: {
+    letterSpacing: 1.5,
     fontSize: 12,
     textTransform: "uppercase",
-    marginBottom: 5,
-    color: "#d6bc90",
+    marginBottom: 7,
+    color: "#d4b88a",
+  },
+  technologies: {
+    flexDirection: "column",
+    flexWrap: "wrap",
+    maxHeight: 60,
   },
 })

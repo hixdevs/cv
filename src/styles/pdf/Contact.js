@@ -5,19 +5,20 @@ import global from "./global"
 export default StyleSheet.create({
   ...global,
   container: {
+    padding: "0 10",
     display: "flex",
-    fontSize: 13,
     width: "90%",
-    padding: "2 0",
-    margin: "0 auto",
+    margin: "20 auto",
     height: "auto",
-    // backgroundColor: "white",
-    borderTop: "3px solid #fff5f5",
   },
+
+  contact: {
+    lineHeight: 1.8,
+  },
+
   email: {
-    color: "#fff2e6",
+    color: "white",
     textDecoration: "none",
-    lineHeight: 1.3,
     textTransform: "uppercase",
   },
 
@@ -27,5 +28,14 @@ export default StyleSheet.create({
     flexWrap: "wrap",
     paddingTop: 10,
     lineHeight: 1.3,
+  },
+
+  heading: {
+    letterSpacing: 1.5,
+
+    fontSize: 12,
+    textTransform: "uppercase",
+    marginBottom: 20,
+    color: "#d4b88a",
   },
 })

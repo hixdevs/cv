@@ -10,11 +10,12 @@ export default {
       email: "wscourge@gmail.com",
       phone: "+48 732 642 360",
       address: {
-        street: "Filipowska 5",
-        city: "Warszawa",
-        postCode: "16-423",
-        state: "Mazowsze",
-        country: "Poland",
+        showAddress: false,
+        street: "",
+        city: "",
+        postCode: "",
+        state: "",
+        country: "",
       },
     },
 
@@ -24,14 +25,40 @@ export default {
       ["Fantasy", "Sci-fi", "True Crime"],
       ["Calisthenics", "Rowing", "Table tennis", "Squash", "Badminton"],
     ],
-    rodo: "rodo clausle text",
+    rodo: "",
+    related: [
+      {
+        name: "GitHub",
+        url: "https://github.com/wscourge",
+      },
+      {
+        name: "GitLab",
+        url: "https://gitlab.com/wscourge",
+      },
+      {
+        name: "Stack Overflow",
+        url: "https://stackoverflow.com/users/6439240/user3221",
+      },
+      {
+        name: "Blog on Ruby on Rails configuration",
+        url: "https://hixonrails.com/ruby-on-rails-tutorials",
+      },
+      {
+        name: "Warsaw Ruby Users Group Talk",
+        url: "https://www.youtube.com/watch?v=nOb_JGk8ojc",
+      },
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
+      },
+    ],
   },
   mainBox: {
     description:
       "Software Engineer with demonstrated experience in both code development and maintenance. Possesses a strong ability to identify issues and offer creative solutions to complex problems, based on effective research, data analysis, and compelling communication. Eagers to learn new technologies, chooses best fit for the requirement.",
     experience: [
       {
-        company: "Material Design for Bootstrap",
+        company: "MDBootstrap",
         link: "https://mdbootstrap.com/",
         title: "Software Engineer",
         years: {
@@ -138,32 +165,6 @@ export default {
       ["Git"],
       ["Docker", "Linux", "Nginx"],
       ["PHP", "Wordpress", "Oxygen"],
-    ],
-    related: [
-      {
-        name: "GitHub",
-        url: "https://github.com/wscourge",
-      },
-      {
-        name: "GitLab",
-        url: "https://gitlab.com/wscourge",
-      },
-      {
-        name: "Stack Overflow",
-        url: "https://stackoverflow.com/users/6439240/user3221",
-      },
-      {
-        name: "Blog on Ruby on Rails configuration",
-        url: "https://hixonrails.com/ruby-on-rails-tutorials",
-      },
-      {
-        name: "Warsaw Ruby Users Group Talk",
-        url: "https://www.youtube.com/watch?v=nOb_JGk8ojc",
-      },
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
-      },
     ],
   },
 }

@@ -1,11 +1,10 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
-import Ubuntu from "../../Ubuntu.ttf"
-// import Raleway from "https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@500&family=Source+Sans+Pro&display=swap"
+import OpenSans from "../../OpenSans.ttf"
 
 Font.register({
-  family: "Ubuntu",
-  src: Ubuntu,
+  family: "OpenSans",
+  src: OpenSans,
 })
 
 export default StyleSheet.create({
@@ -13,8 +12,8 @@ export default StyleSheet.create({
 
   container: {
     fontSize: 9,
-    lineHeight: 1.1,
-    fontFamily: "Ubuntu",
+    lineHeight: 1,
+    fontFamily: "OpenSans",
     display: "flex",
     backgroundColor: "#f5f3f0",
     color: "#333333",
