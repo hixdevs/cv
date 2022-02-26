@@ -6,8 +6,9 @@ export default StyleSheet.create({
   ...global,
 
   container: {
-    margin: "20 auto",
-    padding: "0 10",
+    margin: "0 auto",
+    paddingTop: 10,
+    // padding: "0 10",
     display: "flex",
     width: "90%",
     height: "auto",
@@ -21,7 +22,7 @@ export default StyleSheet.create({
   },
   heading: {
     letterSpacing: 1.5,
-    fontSize: 12,
+    fontSize: 11,
     textTransform: "uppercase",
     marginBottom: 5,
     color: "#d4b88a",

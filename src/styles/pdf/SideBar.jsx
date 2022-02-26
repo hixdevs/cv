@@ -1,26 +1,24 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
-import OpenSans from "../../OpenSans.ttf"
+import RobotoCon from "../../RobotoCon.ttf"
 
 Font.register({
-  family: "OpenSans",
-  src: OpenSans,
+  family: "RobotoCon",
+  src: RobotoCon,
 })
 export default StyleSheet.create({
   ...global,
 
   container: {
     fontSize: 9,
-    fontFamily: "OpenSans",
+    paddingBottom: 150,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignContent: "flex-end",
+    fontFamily: "RobotoCon",
     display: "flex",
     backgroundColor: "#42413e",
     color: "white",
-    width: "35%",
-  },
-
-  layout: {
-    display: "flex",
-    width: "95%",
-    margin: "0 auto",
+    width: "33%",
   },
 })

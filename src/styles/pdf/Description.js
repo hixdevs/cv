@@ -9,7 +9,6 @@ export default StyleSheet.create({
     fontSize: 10,
     display: "flex",
     padding: "3 5",
-
     margin: "20 auto 0",
     width: "90%",
     height: "auto",

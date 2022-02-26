@@ -15,7 +15,7 @@ export default StyleSheet.create({
 
   heading: {
     letterSpacing: 1.5,
-    fontSize: 12,
+    fontSize: 11,
     textTransform: "uppercase",
     marginBottom: 20,
     color: "#d4b88a",
@@ -24,5 +24,6 @@ export default StyleSheet.create({
   interests: {
     lineHeight: 1.8,
     textTransform: "uppercase",
+    letterSpacing: 0.5,
   },
 })

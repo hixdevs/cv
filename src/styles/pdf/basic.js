@@ -11,7 +11,7 @@ export default StyleSheet.create({
 
   panel: {
     width: "2%",
-    backgroundColor: "#b59c8a",
-    opacity: 0.6,
+    backgroundColor: "#734448",
+    opacity: 0.5,
   },
 })

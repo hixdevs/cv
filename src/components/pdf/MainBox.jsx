@@ -5,7 +5,7 @@ import Experience from "./Experience"
 import styles from "../../styles/pdf/MainBox"
 import Description from "../../components/pdf/Description"
 import Technologies from "./Technologies"
-// import Related from "./Related"
+import Related from "./Related"
 
 const MainBox = ({ data }) => {
   const { description, experience, education, technologies, related } = data
@@ -16,10 +16,10 @@ const MainBox = ({ data }) => {
       {description ? <Description data={description} /> : null}
       {experience ? <Experience data={experience} /> : null}
       {education ? <Education education={education} /> : null}
-      {/* <View style={styles.techRel}> */}
-      <Technologies data={technologies} />
-      {/* <Related data={related} /> */}
-      {/* </View> */}
+      <View style={styles.techRel}>
+        <Technologies data={technologies} />
+        <Related data={related} />
+      </View>
 
       {}
     </View>

@@ -26,12 +26,12 @@ export default StyleSheet.create({
 
   name: {
     color: "#edd09d",
-    fontFamily: "OpenSansSemiBold",
+    // fontFamily: "OpenSansSemiBold",
     flexDirection: "row",
     flexWrap: "wrap",
     maxWidth: "90%",
-    fontSize: 26,
-    letterSpacing: 1.5,
+    fontSize: 28,
+    letterSpacing: 4,
     lineHeight: 1.4,
     padding: "10 0",
     textTransform: "uppercase",
@@ -40,7 +40,7 @@ export default StyleSheet.create({
   title: {
     textTransform: "uppercase",
     fontSize: 10,
-    marginBottom: 10,
+    marginBottom: 5,
     letterSpacing: 2.5,
   },
 })

@@ -5,7 +5,7 @@ import global from "./global"
 export default StyleSheet.create({
   ...global,
   container: {
-    margin: "20 auto",
+    margin: "10 auto",
     padding: "0 10",
     display: "flex",
     width: "90%",
@@ -14,6 +14,7 @@ export default StyleSheet.create({
 
   contact: {
     lineHeight: 1.8,
+    letterSpacing: 0.6,
   },
 
   email: {
@@ -32,7 +33,7 @@ export default StyleSheet.create({
 
   heading: {
     letterSpacing: 1.5,
-    fontSize: 12,
+    fontSize: 11,
     textTransform: "uppercase",
     marginBottom: 20,
     color: "#d4b88a",

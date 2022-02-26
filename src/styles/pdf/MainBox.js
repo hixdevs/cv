@@ -11,21 +11,22 @@ export default StyleSheet.create({
   ...global,
 
   container: {
+    color: "#000",
     padding: "0 5",
     fontSize: 9,
     lineHeight: 1,
     fontFamily: "OpenSans",
     display: "flex",
-    backgroundColor: "#f5f3f0",
+    backgroundColor: "#fafafa",
     color: "#333333",
     width: "63%",
   },
 
-  // techRel: {
-  //   padding: "2 10",
-  //   flexDirection: "row",
-  //   margin: "0 auto",
-  //   width: "90%",
-  // justifyContent: "space-around",
-  // },
+  techRel: {
+    padding: "2 0",
+    flexDirection: "row",
+    margin: "0 auto",
+    width: "90%",
+    justifyContent: "space-around",
+  },
 })

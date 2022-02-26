@@ -6,7 +6,6 @@ export default StyleSheet.create({
   ...global,
 
   container: {
-    fontSize: 10,
     display: "flex",
     margin: "0 auto",
     padingTop: 5,
@@ -18,8 +17,9 @@ export default StyleSheet.create({
   company: {
     textDecoration: "none",
     color: "#3489e3",
-    marginBottom: 7,
-    marginTop: 7,
+    marginBottom: 8,
+    marginTop: 8,
+    textTransform: "uppercase",
   },
 
   header: {
@@ -31,10 +31,11 @@ export default StyleSheet.create({
 
   years: {
     textTransform: "uppercase",
+    // fontSize: 8,
   },
   heading: {
     letterSpacing: 1.5,
-    fontSize: 12,
+    fontSize: 11,
     textTransform: "uppercase",
     color: "#d4b88a",
     marginTop: 5,

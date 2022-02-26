@@ -5,7 +5,7 @@ import Personal from "./Personal"
 import { View } from "@react-pdf/renderer"
 import styles from "../../styles/pdf/SideBar"
 import Rodo from "./Rodo"
-import Related from "./Related"
+// import Related from "./Related"
 
 const SideBar = ({ data }) => {
   const { personal, contact, interests, rodo, related } = data
@@ -15,7 +15,7 @@ const SideBar = ({ data }) => {
     <View style={styles.container}>
       <Personal data={personal} />
       <Contact data={contact} />
-      {related.length > 0 ? <Related data={related} /> : null}
+      {/* {related.length > 0 ? <Related data={related} /> : null} */}
       {interests.length > 0 ? <Interests data={interests} /> : null}
       {rodo ? <Rodo data={rodo} /> : null}
     </View>

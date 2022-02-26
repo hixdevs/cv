@@ -23,7 +23,8 @@ export default {
       ["UI & UX Design"],
       ["Economy"],
       ["Fantasy", "Sci-fi", "True Crime"],
-      ["Calisthenics", "Rowing", "Table tennis", "Squash", "Badminton"],
+      ["Calisthenics", "Rowing"],
+      ["Table tennis", "Squash", "Badminton"],
     ],
     rodo: "",
     related: [
@@ -63,7 +64,7 @@ export default {
         title: "Software Engineer",
         years: {
           start: "2016-08-01",
-          end: "2018-07-01",
+          end: "2018-08-01",
         },
         tasks: [
           "Develop multiple company projects concepts, public and internal.",
@@ -95,8 +96,8 @@ export default {
         link: "https://joompin.pl/",
         title: "Co-Founder",
         years: {
-          start: "2018-10-01",
-          end: "2020-11-01",
+          start: "2018-11-01",
+          end: "2020-09-01",
         },
         tasks: [
           "Mobile application MVP development.",
@@ -110,7 +111,7 @@ export default {
         link: "https://hixonrails.com/",
         title: "Co-Founder",
         years: {
-          start: "2019-11-01",
+          start: "2019-10-01",
           end: "now",
         },
         tasks: [
@@ -165,6 +166,32 @@ export default {
       ["Git"],
       ["Docker", "Linux", "Nginx"],
       ["PHP", "Wordpress", "Oxygen"],
+    ],
+    related: [
+      {
+        name: "GitHub",
+        url: "https://github.com/wscourge",
+      },
+      {
+        name: "GitLab",
+        url: "https://gitlab.com/wscourge",
+      },
+      {
+        name: "Stack Overflow",
+        url: "https://stackoverflow.com/users/6439240/user3221",
+      },
+      {
+        name: "Blog on Ruby on Rails configuration",
+        url: "https://hixonrails.com/ruby-on-rails-tutorials",
+      },
+      {
+        name: "Warsaw Ruby Users Group Talk",
+        url: "https://www.youtube.com/watch?v=nOb_JGk8ojc",
+      },
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
+      },
     ],
   },
 }
