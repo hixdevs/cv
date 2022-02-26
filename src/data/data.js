@@ -34,7 +34,10 @@ export default {
         company: "Material Design for Bootstrap",
         link: "https://mdbootstrap.com/",
         title: "Software Engineer",
-        years: "August 2016 - July 2018",
+        years: {
+          start: "2016-08-01",
+          end: "2018-07-01",
+        },
         tasks: [
           "Develop multiple company projects concepts, public and internal.",
           "Management of complex design for marketing automation tool.",
@@ -47,7 +50,10 @@ export default {
         company: "Punkta",
         link: "https://punkta.pl/",
         title: "Software Engineer",
-        years: "August 2018 - May 2020",
+        years: {
+          start: "2018-08-01",
+          end: "2020-05-01",
+        },
         tasks: [
           "Development and maintenance of the core company product.",
           "Working in SCRUM development team.",
@@ -61,7 +67,10 @@ export default {
         company: "Joompin",
         link: "https://joompin.pl/",
         title: "Co-Founder",
-        years: "October 2018 - November 2020",
+        years: {
+          start: "2018-10-01",
+          end: "2020-11-01",
+        },
         tasks: [
           "Mobile application MVP development.",
           "Product planning and making architecture decisions.",
@@ -73,7 +82,10 @@ export default {
         company: "Hix on Rails",
         link: "https://hixonrails.com/",
         title: "Co-Founder",
-        years: "November 2019 - Now",
+        years: {
+          start: "2019-11-01",
+          end: "now",
+        },
         tasks: [
           "Author of an idea for premium Ruby on Rails Application Template.",
           "Product planning and making architecture decisions.",
@@ -87,7 +99,10 @@ export default {
         company: "YND",
         link: "https://ynd.co/",
         title: "Software Engineer",
-        years: "May 2020 - October 2020",
+        years: {
+          start: "2020-05-01",
+          end: "2020-10-01",
+        },
         tasks: [
           "Collaboration with UX/UI and QA teams.",
           "Development of online payments solution, including data (money) integrity insurance and fraud detection.",
@@ -100,7 +115,10 @@ export default {
         company: "Greenbits",
         link: "https://greenbits.com/",
         title: "Software Engineer",
-        years: "October 2020 - Now",
+        years: {
+          start: "2020-10-01",
+          end: "now",
+        },
         tasks: [
           "Collaboration with UX/UI and QA teams.",
           "Development of back-end, front-end and PoS of the SaaS product.",

@@ -8,9 +8,11 @@ const Technologies = ({ data }) => {
     <View style={styles.container}>
       <Text style={styles.heading}>Technologies</Text>
       <List>
-        {data.map((technologies, i) => (
-          <Item key={i}>{technologies.join(" ")}</Item>
-        ))}
+        {data
+          ? data.map((technologies, i) => (
+              <Item key={i}>{technologies.join(", ")}</Item>
+            ))
+          : null}
       </List>
     </View>
   )

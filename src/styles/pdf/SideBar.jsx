@@ -1,17 +1,16 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
-import Oswald from "../../Oswald.ttf"
+import Ubuntu from "../../Ubuntu.ttf"
 
 Font.register({
-  family: "Oswald",
-  src: Oswald,
+  family: "Ubuntu",
+  src: Ubuntu,
 })
-
 export default StyleSheet.create({
   ...global,
 
   container: {
-    fontFamily: "Oswald",
+    fontFamily: "Ubuntu",
     display: "flex",
     backgroundColor: "#42413e",
     color: "white",
