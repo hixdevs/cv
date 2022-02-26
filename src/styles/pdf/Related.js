@@ -17,6 +17,7 @@ export default StyleSheet.create({
     textDecoration: "none",
     color: "#54b2ff",
     lineHeight: 1.5,
+    // letterSpacing: 1.5,
   },
   heading: {
     letterSpacing: 1.5,

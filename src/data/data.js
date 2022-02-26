@@ -58,7 +58,7 @@ export default {
       "Software Engineer with demonstrated experience in both code development and maintenance. Possesses a strong ability to identify issues and offer creative solutions to complex problems, based on effective research, data analysis, and compelling communication. Eagers to learn new technologies, chooses best fit for the requirement.",
     experience: [
       {
-        company: "MDBootstrap",
+        company: "MDBOOTSTRAP",
         link: "https://mdbootstrap.com/",
         title: "Software Engineer",
         years: {

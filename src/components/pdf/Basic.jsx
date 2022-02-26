@@ -1,5 +1,5 @@
 import React from "react"
-import { Document, Page } from "@react-pdf/renderer"
+import { Document, Page, View } from "@react-pdf/renderer"
 
 import styles from "../../styles/pdf/Basic"
 import MainBox from "./MainBox"
@@ -14,6 +14,7 @@ const PdfBasic = ({ data }) => {
     <Document>
       <Page size="A4" style={styles.page}>
         <MainBox data={mainBox} />
+        <View style={styles.panel}></View>
         <SideBar data={sideBar} />
       </Page>
     </Document>

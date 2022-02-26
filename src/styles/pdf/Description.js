@@ -8,7 +8,7 @@ export default StyleSheet.create({
   container: {
     fontSize: 10,
     display: "flex",
-    padding: "3 10",
+    padding: "3 5",
 
     margin: "20 auto 0",
     width: "90%",

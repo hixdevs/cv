@@ -5,10 +5,10 @@ import global from "./global"
 export default StyleSheet.create({
   ...global,
   container: {
+    margin: "20 auto",
     padding: "0 10",
     display: "flex",
     width: "90%",
-    margin: "20 auto",
     height: "auto",
   },
 
@@ -32,7 +32,6 @@ export default StyleSheet.create({
 
   heading: {
     letterSpacing: 1.5,
-
     fontSize: 12,
     textTransform: "uppercase",
     marginBottom: 20,
