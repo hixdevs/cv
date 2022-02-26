@@ -1,12 +1,11 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
-import OpenSansSemiBold from "../../OpenSansSemiBold.ttf"
 import global from "./global"
+import RobotoCon from "../../RobotoCon.ttf"
 
 Font.register({
-  family: "OpenSansSemiBold",
-  src: OpenSansSemiBold,
+  family: "RobotoCon",
+  src: RobotoCon,
 })
-
 export default StyleSheet.create({
   ...global,
   container: {
@@ -25,8 +24,8 @@ export default StyleSheet.create({
   },
 
   name: {
+    fontFamily: "RobotoCon",
     color: "#edd09d",
-    // fontFamily: "OpenSansSemiBold",
     flexDirection: "row",
     flexWrap: "wrap",
     maxWidth: "90%",

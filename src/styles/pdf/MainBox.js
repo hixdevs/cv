@@ -1,10 +1,10 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
-import OpenSans from "../../OpenSans.ttf"
+import Prompt from "../../Prompt.ttf"
 
 Font.register({
-  family: "OpenSans",
-  src: OpenSans,
+  family: "Prompt",
+  src: Prompt,
 })
 
 export default StyleSheet.create({
@@ -14,8 +14,9 @@ export default StyleSheet.create({
     color: "#000",
     padding: "0 5",
     fontSize: 9,
-    lineHeight: 1,
-    fontFamily: "OpenSans",
+    letterSpacing: 0.3,
+    lineHeight: 1.1,
+    fontFamily: "Prompt",
     display: "flex",
     backgroundColor: "#fafafa",
     color: "#333333",

@@ -1,21 +1,22 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
-import RobotoCon from "../../RobotoCon.ttf"
+import Prompt from "../../Prompt.ttf"
 
 Font.register({
-  family: "RobotoCon",
-  src: RobotoCon,
+  family: "Prompt",
+  src: Prompt,
 })
+
 export default StyleSheet.create({
   ...global,
 
   container: {
+    fontFamily: "Prompt",
     fontSize: 9,
     paddingBottom: 150,
     flexDirection: "row",
     flexWrap: "wrap",
     alignContent: "flex-end",
-    fontFamily: "RobotoCon",
     display: "flex",
     backgroundColor: "#42413e",
     color: "white",

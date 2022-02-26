@@ -11,12 +11,11 @@ export default StyleSheet.create({
     padingTop: 5,
     width: "90%",
     height: "auto",
-    lineHeight: 1.1,
   },
 
   company: {
     textDecoration: "none",
-    color: "#3489e3",
+    color: "#54b2ff",
     marginBottom: 8,
     marginTop: 8,
     textTransform: "uppercase",
