@@ -2,13 +2,16 @@ import { View } from "@react-pdf/renderer"
 import React from "react"
 import Education from "./Education"
 import Experience from "./Experience"
-import styles from "../../styles/pdf/MainBox"
+import createStyles from "../../styles/pdf/MainBox"
 import Description from "../../components/pdf/Description"
 import Technologies from "./Technologies"
 import Related from "./Related"
+import usePdfTheme from "../../hooks/usePdfTheme"
 
 const MainBox = ({ data }) => {
   const { description, experience, education, technologies, related } = data
+  const theme = usePdfTheme()
+  const styles = createStyles(theme)
 
   return (
     <View style={styles.container}>

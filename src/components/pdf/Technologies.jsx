@@ -1,9 +1,13 @@
 import { Text, View } from "@react-pdf/renderer"
 import React from "react"
-import styles from "../../styles/pdf/Technologies"
+import createStyles from "../../styles/pdf/Technologies"
 import List, { Item } from "./List"
+import usePdfTheme from "../../hooks/usePdfTheme"
 
 const Technologies = ({ data }) => {
+  const theme = usePdfTheme()
+  const styles = createStyles(theme)
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Technologies</Text>

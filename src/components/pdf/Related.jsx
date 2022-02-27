@@ -1,8 +1,12 @@
 import React from "react"
 import { View, Text, Link } from "@react-pdf/renderer"
-import styles from "../../styles/pdf/Related"
+import createStyles from "../../styles/pdf/Related"
+import usePdfTheme from "../../hooks/usePdfTheme"
 
 const Related = ({ data }) => {
+  const theme = usePdfTheme()
+  const styles = createStyles(theme)
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Related</Text>

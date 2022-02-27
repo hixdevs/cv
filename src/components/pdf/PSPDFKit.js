@@ -1,7 +1,4 @@
 import React, { Component } from "react"
-// import styles from "src/styles/pdf/Outer"
-import { View } from "@react-pdf/renderer"
-import ControlPanel from "./ControlPanel.jsx"
 
 export default class PSPDFKit extends Component {
   containerRef = React.createRef()
@@ -20,18 +17,15 @@ export default class PSPDFKit extends Component {
 
   render() {
     return (
-      <div>
-        <ControlPanel />
-        <div
-          ref={this.containerRef}
-          style={{
-            width: "50%",
-            height: "100%",
-            position: "absolute",
-            left: "50%",
-          }}
-        />
-      </div>
+      <div
+        ref={this.containerRef}
+        style={{
+          width: "50%",
+          height: "100%",
+          position: "absolute",
+          left: "50%",
+        }}
+      />
     )
   }
 }

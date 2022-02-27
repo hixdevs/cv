@@ -1,41 +1,41 @@
 import { StyleSheet } from "@react-pdf/renderer"
 import global from "./global"
-import { theme } from "./themes"
 
-export default StyleSheet.create({
-  ...global,
+export default theme =>
+  StyleSheet.create({
+    ...global,
 
-  container: {
-    display: "flex",
-    margin: "0 auto",
-    padingTop: 5,
-    width: "90%",
-    height: "auto",
-  },
+    container: {
+      display: "flex",
+      margin: "0 auto",
+      padingTop: 5,
+      width: "90%",
+      height: "auto",
+    },
 
-  company: {
-    textDecoration: "none",
-    color: theme.link,
-    marginBottom: 8,
-    marginTop: 8,
-    textTransform: "uppercase",
-  },
+    company: {
+      textDecoration: "none",
+      color: theme.link,
+      marginBottom: 8,
+      marginTop: 8,
+      textTransform: "uppercase",
+    },
 
-  header: {
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
+    header: {
+      alignItems: "center",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+    },
 
-  years: {
-    textTransform: "uppercase",
-  },
-  heading: {
-    letterSpacing: 1.5,
-    fontSize: 11,
-    textTransform: "uppercase",
-    color: theme.heading,
-    marginTop: 5,
-  },
-})
+    years: {
+      textTransform: "uppercase",
+    },
+    heading: {
+      letterSpacing: 1.5,
+      fontSize: 11,
+      textTransform: "uppercase",
+      color: theme.heading,
+      marginTop: 5,
+    },
+  })

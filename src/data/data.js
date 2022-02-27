@@ -1,6 +1,8 @@
 export default {
   sideBar: {
     personal: {
+      description:
+        "Software Engineer with demonstrated experience in both code development and maintenance. Possesses a strong ability to identify issues and offer creative solutions to complex problems, based on effective research, data analysis, and compelling communication. Eagers to learn new technologies, chooses best fit for the requirement.",
       firstName: "Wiktor",
       lastName: "Plaga",
       photo: "profile.jpg",
@@ -52,6 +54,17 @@ export default {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
       },
+    ],
+    technologies: [
+      ["Ruby", "Ruby on Rails", "Sinatra"],
+      ["Node", "Ember", "React", "jQuery"],
+      ["React Native"],
+      ["HTML", "CSS", "SCSS"],
+      ["MariaDB", "MySQL", "Postgres"],
+      ["Redis", "Mongo", "Firestore"],
+      ["Git"],
+      ["Docker", "Linux", "Nginx"],
+      ["PHP", "Wordpress", "Oxygen"],
     ],
   },
   mainBox: {

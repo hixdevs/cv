@@ -1,12 +1,15 @@
 import { View, Text, Link } from "@react-pdf/renderer"
 import React from "react"
-import styles from "../../styles/pdf/Experience"
+import createStyles from "../../styles/pdf/Experience"
 import List, { Item } from "./List"
 import { format } from "date-fns"
+import usePdfTheme from "../../hooks/usePdfTheme"
 
 const Experience = ({ data }) => {
   data.sort((a, b) => (a.years.start < b.years.start ? 1 : -1))
   const formatDate = date => format(new Date(date), ["MMM yyyy"])
+  const theme = usePdfTheme()
+  const styles = createStyles(theme)
 
   return (
     <View style={styles.container}>
