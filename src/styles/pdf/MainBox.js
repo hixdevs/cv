@@ -1,6 +1,7 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
 import Prompt from "../../Prompt.ttf"
+import { theme } from "./themes"
 
 Font.register({
   family: "Prompt",
@@ -11,15 +12,14 @@ export default StyleSheet.create({
   ...global,
 
   container: {
-    color: "#000",
     padding: "0 5",
     fontSize: 9,
     letterSpacing: 0.3,
     lineHeight: 1.1,
     fontFamily: "Prompt",
     display: "flex",
-    backgroundColor: "#fafafa",
-    color: "#333333",
+    backgroundColor: theme.secondary,
+    color: theme.textMain,
     width: "63%",
   },
 

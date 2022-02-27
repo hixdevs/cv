@@ -1,6 +1,6 @@
 import { StyleSheet } from "@react-pdf/renderer"
-
 import global from "./global"
+import { theme } from "./themes"
 
 export default StyleSheet.create({
   ...global,
@@ -15,7 +15,7 @@ export default StyleSheet.create({
 
   company: {
     textDecoration: "none",
-    color: "#54b2ff",
+    color: theme.link,
     marginBottom: 8,
     marginTop: 8,
     textTransform: "uppercase",
@@ -30,13 +30,12 @@ export default StyleSheet.create({
 
   years: {
     textTransform: "uppercase",
-    // fontSize: 8,
   },
   heading: {
     letterSpacing: 1.5,
     fontSize: 11,
     textTransform: "uppercase",
-    color: "#d4b88a",
+    color: theme.heading,
     marginTop: 5,
   },
 })

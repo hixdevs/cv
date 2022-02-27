@@ -1,6 +1,7 @@
 import { StyleSheet } from "@react-pdf/renderer"
 
 import global from "./global"
+import { theme } from "./themes"
 
 export default StyleSheet.create({
   ...global,
@@ -11,7 +12,7 @@ export default StyleSheet.create({
 
   panel: {
     width: "2%",
-    backgroundColor: "#734448",
+    backgroundColor: theme.ternary,
     opacity: 0.5,
   },
 })

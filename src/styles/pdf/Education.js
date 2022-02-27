@@ -10,8 +10,6 @@ export default StyleSheet.create({
     margin: "10 auto",
     padding: "5 10",
     borderTop: "2px solid #4d3319",
-    // backgroundColor: "white",
-    // border: "1px solid black",
     width: "95%",
     height: "auto",
   },

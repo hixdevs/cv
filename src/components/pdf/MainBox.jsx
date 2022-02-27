@@ -9,7 +9,6 @@ import Related from "./Related"
 
 const MainBox = ({ data }) => {
   const { description, experience, education, technologies, related } = data
-  console.log("data:", data)
 
   return (
     <View style={styles.container}>

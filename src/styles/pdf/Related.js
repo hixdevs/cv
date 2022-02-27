@@ -1,6 +1,7 @@
 import { StyleSheet } from "@react-pdf/renderer"
 
 import global from "./global"
+import { theme } from "./themes"
 
 export default StyleSheet.create({
   ...global,
@@ -8,7 +9,6 @@ export default StyleSheet.create({
   container: {
     margin: "0 auto",
     paddingTop: 10,
-    // padding: "0 10",
     display: "flex",
     width: "90%",
     height: "auto",
@@ -16,9 +16,8 @@ export default StyleSheet.create({
 
   source: {
     textDecoration: "none",
-    color: "#54b2ff",
+    color: theme.link,
     lineHeight: 1.5,
-    // letterSpacing: 1.5,
   },
   heading: {
     letterSpacing: 1.5,

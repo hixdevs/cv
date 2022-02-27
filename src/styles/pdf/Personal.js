@@ -1,6 +1,8 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 import global from "./global"
 import RobotoCon from "../../RobotoCon.ttf"
+import { theme } from "./themes"
+// import { theme } from "./themes"
 
 Font.register({
   family: "RobotoCon",
@@ -20,12 +22,12 @@ export default StyleSheet.create({
     maxWidth: "100%",
     height: "auto",
     margin: "0 auto",
-    // backgroundColor: "white",
+    // backgroundColor: theme.secondary,
   },
 
   name: {
     fontFamily: "RobotoCon",
-    color: "#edd09d",
+    color: theme.heading,
     flexDirection: "row",
     flexWrap: "wrap",
     maxWidth: "90%",

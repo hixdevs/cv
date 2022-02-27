@@ -3,8 +3,6 @@ import React from "react"
 import styles from "../../styles/pdf/Personal"
 
 const Personal = ({ data }) => {
-  console.log("data:", data)
-
   const { firstName, lastName, photo, title } = data
 
   return (
