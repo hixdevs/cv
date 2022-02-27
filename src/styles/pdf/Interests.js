@@ -24,6 +24,6 @@ export default StyleSheet.create({
   interests: {
     lineHeight: 1.8,
     textTransform: "uppercase",
-    letterSpacing: 0.5,
+    letterSpacing: -0.1,
   },
 })
