@@ -12,10 +12,11 @@ export default theme =>
     ...global,
 
     container: {
+      display: "flex",
       fontFamily: "Prompt",
       backgroundColor: theme.primary,
       color: theme.textSide,
       width: "100%",
-      height: "25%",
+      height: "20%",
     },
   })

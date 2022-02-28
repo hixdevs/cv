@@ -1,7 +1,7 @@
 import React from "react"
 import Contact from "./Contact"
 import Interests from "./Interests"
-import PersonalVert from "./PersonalVert"
+import PersonalSide from "./PersonalSide"
 import { View } from "@react-pdf/renderer"
 import createStyles from "../../styles/pdf/SideBar"
 import Rodo from "./Rodo"
@@ -15,7 +15,7 @@ const SideBar = ({ data }) => {
   const styles = createStyles(theme)
   return (
     <View style={styles.container}>
-      <PersonalVert data={personal} />
+      <PersonalSide data={personal} />
       <Contact data={contact} />
       {/* <Related data={related} /> */}
       {/* <Technologies data={technologies} /> */}

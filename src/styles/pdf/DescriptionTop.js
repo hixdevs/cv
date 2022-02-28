@@ -1,7 +1,6 @@
 import { StyleSheet, Font } from "@react-pdf/renderer"
 
 import global from "./global"
-import Prompt from "../../Prompt.ttf"
 
 export default StyleSheet.create({
   ...global,

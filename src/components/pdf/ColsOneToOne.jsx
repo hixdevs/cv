@@ -14,6 +14,7 @@ const ColsOneToOne = ({ data }) => {
     <Document>
       <Page size="A4" style={styles.page}>
         <TopBar data={sideBar} />
+
         {/* <View style={styles.panel}></View> */}
         {/* <MainBox data={mainBox} /> */}
       </Page>

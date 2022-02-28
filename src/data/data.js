@@ -12,12 +12,12 @@ export default {
       email: "wscourge@gmail.com",
       phone: "+48 732 642 360",
       address: {
-        showAddress: false,
-        street: "",
-        city: "",
-        postCode: "",
-        state: "",
-        country: "",
+        showAddress: true,
+        street: "Filipowska 5",
+        city: "Warszawa",
+        postCode: "16-423",
+        state: "Podlasie",
+        country: "Polska",
       },
     },
 

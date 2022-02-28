@@ -1,9 +1,9 @@
 import { View, Text, Image } from "@react-pdf/renderer"
 import React from "react"
-import createStyles from "../../styles/pdf/PersonalVert"
+import createStyles from "../../styles/pdf/PersonalSide"
 import usePdfTheme from "../../hooks/usePdfTheme"
 
-const PersonalVert = ({ data }) => {
+const PersonalSide = ({ data }) => {
   const { firstName, lastName, title } = data
   const theme = usePdfTheme()
   const styles = createStyles(theme)
@@ -29,4 +29,4 @@ const PersonalVert = ({ data }) => {
   )
 }
 
-export default PersonalVert
+export default PersonalSide
