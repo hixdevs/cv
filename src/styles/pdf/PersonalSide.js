@@ -12,8 +12,8 @@ export default theme =>
     container: {
       flexDirection: "column",
       padding: "0 10",
-      margin: "20 auto",
-      width: "90%",
+      margin: "10 auto",
+      width: "100%",
       height: "auto",
     },
 
@@ -27,10 +27,10 @@ export default theme =>
 
     name: {
       fontFamily: "RobotoCon",
-      color: theme.heading,
+      color: theme.secondary,
       flexDirection: "row",
       flexWrap: "wrap",
-      maxWidth: "90%",
+      maxWidth: "100%",
       fontSize: 28,
       letterSpacing: 4,
       lineHeight: 1.4,

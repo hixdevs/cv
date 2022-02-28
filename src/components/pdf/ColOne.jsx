@@ -5,13 +5,15 @@ import createStyles from "../../styles/pdf/ColOne"
 import Description from "../../components/pdf/Description"
 import Technologies from "./Technologies"
 import usePdfTheme from "../../hooks/usePdfTheme"
+import Contact from "./Contact"
+import Related from "./Related"
 
 const ColOne = ({ data }) => {
   console.log("description:", description)
 
   console.log("data:", data)
 
-  const { description, experience, education, technologies, related } = data
+  const { description, contact, education, technologies, related } = data
   console.log("education:", education)
 
   const theme = usePdfTheme()
@@ -19,9 +21,15 @@ const ColOne = ({ data }) => {
 
   return (
     <View style={styles.container}>
-      {description ? <Description data={description} /> : null}
-      <Technologies data={technologies} />
-      {education ? <Education data={education} /> : null}
+      <View style={{ width: "95%", margin: "auto" }}>
+        {description ? <Description data={description} /> : null}
+        <View style={styles.techRel}>
+          <Technologies data={technologies} />
+          <Related data={related} />
+        </View>
+        {education ? <Education data={education} /> : null}
+        <Contact data={contact} />
+      </View>
     </View>
   )
 }

@@ -12,7 +12,6 @@ export default theme =>
     ...global,
 
     container: {
-      // margin: "auto 0",
       display: "flex",
       alignContent: "center",
       backgroundColor: "#fafafa",

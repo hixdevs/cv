@@ -2,10 +2,13 @@ import { View, Text, Image } from "@react-pdf/renderer"
 import React from "react"
 import createStyles from "../../styles/pdf/PersonalTop"
 import usePdfTheme from "../../hooks/usePdfTheme"
-import ContactTop from "../pdf/ContactTop"
+import DescriptionTop from "../pdf/DescriptionTop"
+// import ContactTop from "../pdf/ContactTop"
 
 const PersonalTop = ({ data }) => {
-  const { contact } = data
+  console.log("data:", data)
+
+  // const { contact, description } = data
   const { firstName, lastName, title } = data.personal
 
   const theme = usePdfTheme()
@@ -28,7 +31,8 @@ const PersonalTop = ({ data }) => {
           <Text>{`${firstName} ${lastName}`} </Text>
         </View>
         <View>{title ? <Text style={styles.title}>{title}</Text> : null}</View>
-        <ContactTop data={contact} />
+        {/* <DescriptionTop data={description} /> */}
+        {/* <ContactTop data={contact} /> */}
       </View>
     </View>
   )

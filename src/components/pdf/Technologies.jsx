@@ -1,7 +1,7 @@
 import { Text, View } from "@react-pdf/renderer"
 import React from "react"
 import createStyles from "../../styles/pdf/Technologies"
-import List, { Item } from "./List"
+import List from "./List"
 import usePdfTheme from "../../hooks/usePdfTheme"
 
 const Technologies = ({ data }) => {
@@ -15,7 +15,7 @@ const Technologies = ({ data }) => {
         <List>
           {data
             ? data.map((technologies, i) => (
-                <Item key={i}>{technologies.join(", ")}</Item>
+                <Text key={i}>{technologies.join(", ")}</Text>
               ))
             : null}
         </List>

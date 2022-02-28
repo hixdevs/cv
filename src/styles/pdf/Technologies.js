@@ -6,10 +6,9 @@ export default theme =>
   StyleSheet.create({
     ...global,
     container: {
-      display: "flex",
-      margin: "0 auto",
-      paddingTop: 10,
-      width: "90%",
+      margin: "10 auto",
+      padding: "0 10",
+      width: "100%",
       height: "auto",
     },
 
@@ -17,13 +16,10 @@ export default theme =>
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      marginBottom: 7,
-      color: theme.heading,
+      marginBottom: 15,
+      color: theme.secondary,
     },
     technologies: {
-      lineHeight: 1,
-      // flexDirection: "column",
-      // flexWrap: "wrap",
-      // maxHeight: 60,
+      lineHeight: 1.3,
     },
   })

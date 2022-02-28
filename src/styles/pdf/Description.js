@@ -6,11 +6,10 @@ export default StyleSheet.create({
   ...global,
 
   container: {
-    fontSize: 10,
     display: "flex",
-    padding: "3 5",
-    margin: "20 auto 0",
-    width: "90%",
+    margin: "10 auto",
+    padding: "0 15",
+    width: "100%",
     height: "auto",
     lineHeight: 1.2,
   },

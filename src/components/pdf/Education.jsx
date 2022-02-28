@@ -1,7 +1,6 @@
-import { Text, View, Link } from "@react-pdf/renderer"
+import { Text, View } from "@react-pdf/renderer"
 import React from "react"
 import createStyles from "../../styles/pdf/Education"
-import List, { Item } from "./List"
 import { format } from "date-fns"
 import usePdfTheme from "../../hooks/usePdfTheme"
 

@@ -12,11 +12,16 @@ export default theme =>
     ...global,
 
     container: {
-      // margin: "auto 0",
-      border: "1px solid black",
-      backgroundColor: "#fafafa",
+      margin: "0 auto",
+      backgroundColor: theme.secondary,
       display: "flex",
       width: "50%",
-      // padding: "0 4",
+    },
+    techRel: {
+      padding: "2 0",
+      flexDirection: "row",
+      margin: "10 auto",
+      width: "90%",
+      justifyContent: "space-around",
     },
   })

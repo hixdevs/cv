@@ -9,8 +9,7 @@ export default theme =>
     container: {
       display: "flex",
       margin: "10 auto",
-      padding: "5 10",
-      width: "95%",
+      width: "90%",
       height: "auto",
     },
 
@@ -18,8 +17,7 @@ export default theme =>
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      color: theme.heading,
-      marginTop: 5,
+      color: theme.secondary,
     },
 
     header: {
@@ -31,8 +29,8 @@ export default theme =>
 
     school: {
       textDecoration: "none",
-      color: theme.ternary,
-      marginBottom: 8,
+      color: theme.secondary,
+      marginBottom: 5,
       marginTop: 8,
       textTransform: "uppercase",
     },

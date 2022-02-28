@@ -7,12 +7,10 @@ export default theme =>
     ...global,
     page: {
       flexDirection: "row",
-      padding: 5,
     },
-
     panel: {
       width: "2%",
-      backgroundColor: theme.ternary,
+      backgroundColor: theme.secondary,
       opacity: 0.5,
     },
   })

@@ -7,12 +7,11 @@ export default theme =>
     ...global,
     page: {
       display: "flex",
-      padding: 5,
     },
 
     panel: {
-      width: "2%",
       backgroundColor: theme.ternary,
+      height: "1%",
       opacity: 0.5,
     },
     main: {
@@ -20,7 +19,7 @@ export default theme =>
       flexDirection: "row",
       marigin: "0 auto",
       width: "100%",
-      height: "80%",
+      height: "79%",
       alignContent: "flex-end",
     },
   })

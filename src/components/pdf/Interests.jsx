@@ -1,9 +1,12 @@
 import React from "react"
-import styles from "../../styles/pdf/Interests"
+import createStyles from "../../styles/pdf/Interests"
 import { View, Text } from "@react-pdf/renderer"
 import List from "../../components/pdf/List"
+import usePdfTheme from "../../hooks/usePdfTheme"
 
 const Interests = ({ data }) => {
+  const theme = usePdfTheme()
+  const styles = createStyles(theme)
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Interests</Text>

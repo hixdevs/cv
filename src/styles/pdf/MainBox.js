@@ -12,22 +12,14 @@ export default theme =>
     ...global,
 
     container: {
-      padding: "0 5",
+      margin: "10 auto",
       fontSize: 9,
       letterSpacing: 0.3,
       lineHeight: 1.1,
       fontFamily: "Prompt",
       display: "flex",
-      backgroundColor: theme.secondary,
+      backgroundColor: theme.ternary,
       color: theme.textMain,
-      width: "63%",
-    },
-
-    techRel: {
-      padding: "2 0",
-      flexDirection: "row",
-      margin: "0 auto",
-      width: "90%",
-      justifyContent: "space-around",
+      width: "65%",
     },
   })

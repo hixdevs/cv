@@ -12,15 +12,11 @@ export default theme =>
     ...global,
 
     container: {
+      margin: "0 auto",
       fontFamily: "Prompt",
       fontSize: 9,
-      paddingBottom: 150,
-      flexDirection: "row",
-      flexWrap: "wrap",
-      alignContent: "flex-end",
-      display: "flex",
       backgroundColor: theme.primary,
-      color: theme.textSide,
+      color: theme.textLight,
       width: "33%",
     },
   })

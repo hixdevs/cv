@@ -8,9 +8,8 @@ export default theme =>
     container: {
       margin: "10 auto",
       padding: "0 10",
-      // paddingTop: 10,
+      width: "100%",
       display: "flex",
-      width: "90%",
       height: "auto",
     },
 
@@ -23,7 +22,7 @@ export default theme =>
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      marginBottom: 5,
-      color: "#d4b88a",
+      marginBottom: 15,
+      color: theme.secondary,
     },
   })

@@ -1,10 +1,12 @@
 import { View, Text, Link } from "@react-pdf/renderer"
 import React from "react"
-import styles from "../../styles/pdf/Contact"
-// import { AiOutlineMail } from "react-icons/ai"
+import createStyles from "../../styles/pdf/Contact"
+import usePdfTheme from "../../hooks/usePdfTheme"
 
 const Contact = ({ data }) => {
   const { email, address, phone } = data
+  const theme = usePdfTheme()
+  const styles = createStyles(theme)
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Contact</Text>

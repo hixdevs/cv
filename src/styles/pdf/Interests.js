@@ -2,29 +2,26 @@ import { StyleSheet } from "@react-pdf/renderer"
 
 import global from "./global"
 
-export default StyleSheet.create({
-  ...global,
+export default theme =>
+  StyleSheet.create({
+    ...global,
 
-  container: {
-    display: "flex",
-    padding: "0 10",
-    // margin: "10 auto",
-    margin: "20 auto",
-    width: "90%",
-    height: "auto",
-  },
+    container: {
+      margin: "10 auto",
+      padding: "0 10",
+      width: "100%",
+      height: "auto",
+    },
 
-  heading: {
-    letterSpacing: 1.5,
-    fontSize: 11,
-    textTransform: "uppercase",
-    marginBottom: 20,
-    color: "#d4b88a",
-  },
+    heading: {
+      letterSpacing: 1.5,
+      fontSize: 11,
+      textTransform: "uppercase",
+      marginBottom: 15,
+      color: theme.secondary,
+    },
 
-  interests: {
-    lineHeight: 1.8,
-    textTransform: "uppercase",
-    letterSpacing: -0.1,
-  },
-})
+    interests: {
+      lineHeight: 1.3,
+    },
+  })

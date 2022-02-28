@@ -4,12 +4,12 @@ import Education from "./Education"
 import Experience from "./Experience"
 import createStyles from "../../styles/pdf/MainBox"
 import Description from "../../components/pdf/Description"
-import Technologies from "./Technologies"
-import Related from "./Related"
+
 import usePdfTheme from "../../hooks/usePdfTheme"
 
 const MainBox = ({ data }) => {
-  const { description, experience, education, technologies, related } = data
+  const { description, experience, education } = data
+
   const theme = usePdfTheme()
   const styles = createStyles(theme)
 
@@ -17,13 +17,7 @@ const MainBox = ({ data }) => {
     <View style={styles.container}>
       {description ? <Description data={description} /> : null}
       {experience ? <Experience data={experience} /> : null}
-      {education ? <Education education={education} /> : null}
-      <View style={styles.techRel}>
-        <Technologies data={technologies} />
-        <Related data={related} />
-      </View>
-
-      {}
+      {education ? <Education data={education} /> : null}
     </View>
   )
 }
