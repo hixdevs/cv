@@ -13,7 +13,7 @@ export default theme =>
 
     container: {
       display: "flex",
-      alignContent: "center",
+      // alignContent: "center",
       backgroundColor: theme.ternary,
       width: "50%",
     },

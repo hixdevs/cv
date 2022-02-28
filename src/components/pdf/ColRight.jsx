@@ -11,7 +11,7 @@ const ColLeft = ({ data }) => {
 
   return (
     <View style={styles.container}>
-      <View style={{ width: "100%", margin: "auto", paddingRight: 10 }}>
+      <View style={{ width: "100%", margin: "10 auto", paddingRight: 10 }}>
         {experience ? <Experience data={experience} /> : null}
       </View>
     </View>

@@ -1,5 +1,5 @@
 import React from "react"
-import Contact from "./Contact"
+import Contact from "./ContactSide"
 import Interests from "./Interests"
 import PersonalSide from "./PersonalSide"
 import { View } from "@react-pdf/renderer"
@@ -10,8 +10,6 @@ import Related from "./Related"
 import Technologies from "./Technologies"
 
 const SideBar = ({ data }) => {
-  console.log("data:", data)
-
   const { personal, contact, interests, rodo, related, technologies } = data
   const theme = usePdfTheme()
   const styles = createStyles(theme)

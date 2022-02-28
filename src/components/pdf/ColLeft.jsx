@@ -16,14 +16,14 @@ const ColLeft = ({ data }) => {
 
   return (
     <View style={styles.container}>
-      <View style={{ width: "90%", margin: "12 auto" }}>
+      <View style={{ width: "90%", margin: "10 auto" }}>
         {description ? <Description data={description} /> : null}
         {education ? <Education data={education} /> : null}
         {/* <View style={styles.techRel}> */}
         <Technologies data={technologies} />
         <Related data={related} />
-        <Interests data={interests} />
         {/* </View> */}
+        <Interests data={interests} />
       </View>
     </View>
   )

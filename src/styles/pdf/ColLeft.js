@@ -12,14 +12,13 @@ export default theme =>
     ...global,
 
     container: {
-      margin: "0 auto",
       backgroundColor: theme.ternary,
       display: "flex",
       width: "50%",
     },
-    techRel: {
-      flexDirection: "row",
-      width: "100%",
-      justifyContent: "space-between",
-    },
+    // techRel: {
+    //   flexDirection: "row",
+    //   width: "100%",
+    //   justifyContent: "space-between",
+    // },
   })

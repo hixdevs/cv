@@ -1,9 +1,9 @@
 import { View, Text, Link } from "@react-pdf/renderer"
 import React from "react"
-import createStyles from "../../styles/pdf/Contact"
+import createStyles from "../../styles/pdf/ContactSide"
 import usePdfTheme from "../../hooks/usePdfTheme"
 
-const Contact = ({ data }) => {
+const ContactSide = ({ data }) => {
   const { email, address, phone } = data
   const theme = usePdfTheme()
   const styles = createStyles(theme)
@@ -29,4 +29,4 @@ const Contact = ({ data }) => {
   )
 }
 
-export default Contact
+export default ContactSide
