@@ -12,9 +12,11 @@ export default theme =>
     ...global,
 
     container: {
+      // margin: "auto 0",
       border: "1px solid black",
       backgroundColor: "#fafafa",
       display: "flex",
       width: "50%",
+      // padding: "0 4",
     },
   })

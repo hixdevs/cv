@@ -5,8 +5,6 @@ import usePdfTheme from "../../hooks/usePdfTheme"
 import ContactTop from "../pdf/ContactTop"
 
 const PersonalTop = ({ data }) => {
-  console.log("data:", data)
-
   const { contact } = data
   const { firstName, lastName, title } = data.personal
 

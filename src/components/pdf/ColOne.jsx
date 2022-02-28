@@ -1,30 +1,28 @@
 import { View } from "@react-pdf/renderer"
 import React from "react"
 import Education from "./Education"
-import Experience from "./Experience"
 import createStyles from "../../styles/pdf/ColOne"
 import Description from "../../components/pdf/Description"
 import Technologies from "./Technologies"
-import Related from "./Related"
 import usePdfTheme from "../../hooks/usePdfTheme"
 
 const ColOne = ({ data }) => {
+  console.log("description:", description)
+
+  console.log("data:", data)
+
   const { description, experience, education, technologies, related } = data
+  console.log("education:", education)
+
   const theme = usePdfTheme()
   const styles = createStyles(theme)
 
   return (
     <View style={styles.container}>
-      {/* {description ? <Description data={description} /> : null} */}
-      {/* {experience ? <Experience data={experience} /> : null} */}
-      {/* {education ? <Education education={education} /> : null} */}
-      {/* <View style={styles.techRel}> */}
-      {/* <Technologies data={technologies} /> */}
-      {/* <Related data={related} /> */}
+      {description ? <Description data={description} /> : null}
+      <Technologies data={technologies} />
+      {education ? <Education data={education} /> : null}
     </View>
-
-    //   {}
-    // </View>
   )
 }
 

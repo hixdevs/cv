@@ -12,10 +12,10 @@ export default theme =>
     ...global,
 
     container: {
-      border: "1px solid black",
-      backgroundColor: "#fafafa",
+      // margin: "auto 0",
       display: "flex",
-      justifySelf: "flex-end",
+      alignContent: "center",
+      backgroundColor: "#fafafa",
       width: "50%",
     },
   })

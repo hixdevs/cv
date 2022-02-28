@@ -16,6 +16,7 @@ export default theme =>
       opacity: 0.5,
     },
     main: {
+      fontSize: 9,
       flexDirection: "row",
       marigin: "0 auto",
       width: "100%",

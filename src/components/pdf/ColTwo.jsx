@@ -16,7 +16,7 @@ const ColOne = ({ data }) => {
   return (
     <View style={styles.container}>
       {/* {description ? <Description data={description} /> : null} */}
-      {/* {experience ? <Experience data={experience} /> : null} */}
+      {experience ? <Experience data={experience} /> : null}
       {/* {education ? <Education education={education} /> : null} */}
       {/* <View style={styles.techRel}> */}
       {/* <Technologies data={technologies} /> */}

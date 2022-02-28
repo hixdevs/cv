@@ -8,13 +8,13 @@ import ColOne from "./ColOne"
 import ColTwo from "./ColTwo"
 
 const ColsOneToOne = ({ data }) => {
-  const { sideBar, mainBox } = data
+  // console.log("data:", data)
   const theme = usePdfTheme()
   const styles = createStyles(theme)
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <TopBar data={sideBar} />
+        <TopBar data={data} />
         <View style={styles.main}>
           <ColOne data={data} />
           <ColTwo data={data} />
