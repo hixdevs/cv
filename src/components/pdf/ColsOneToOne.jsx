@@ -1,10 +1,11 @@
 import React from "react"
 import { Document, Page, View } from "@react-pdf/renderer"
 
-import createStyles from "../../styles/pdf/Basic"
-import MainBox from "./MainBox"
+import createStyles from "../../styles/pdf/ColOneToOne"
 import TopBar from "./TopBar"
 import usePdfTheme from "../../hooks/usePdfTheme"
+import ColOne from "./ColOne"
+import ColTwo from "./ColTwo"
 
 const ColsOneToOne = ({ data }) => {
   const { sideBar, mainBox } = data
@@ -14,9 +15,10 @@ const ColsOneToOne = ({ data }) => {
     <Document>
       <Page size="A4" style={styles.page}>
         <TopBar data={sideBar} />
-
-        {/* <View style={styles.panel}></View> */}
-        {/* <MainBox data={mainBox} /> */}
+        <View style={styles.main}>
+          <ColOne data={data} />
+          <ColTwo data={data} />
+        </View>
       </Page>
     </Document>
   )

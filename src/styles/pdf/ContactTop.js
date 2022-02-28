@@ -14,7 +14,6 @@ export default StyleSheet.create({
     display: "flex",
     width: "50%",
     lineHeight: 1.5,
-    border: "1px solid white",
   },
 
   email: {
@@ -33,6 +32,7 @@ export default StyleSheet.create({
     color: "#d4b88a",
   },
   address: {
+    width: "40%",
     display: "flex",
     flexDirection: "row",
     alignContent: "flex-end",

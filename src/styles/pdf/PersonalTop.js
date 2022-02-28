@@ -17,7 +17,6 @@ export default theme =>
       flexDirection: "row",
       alignItems: "center",
       height: "100%",
-      // border: "1px solid white",
     },
 
     image: {
@@ -37,8 +36,6 @@ export default theme =>
       margin: "0 auto",
       marginRight: 10,
       width: "80%",
-
-      border: "1px solid white",
     },
 
     name: {
@@ -48,7 +45,6 @@ export default theme =>
       letterSpacing: 4,
       lineHeight: 1.4,
       textTransform: "uppercase",
-      border: "1px solid white",
     },
 
     title: {
@@ -57,6 +53,5 @@ export default theme =>
       textTransform: "uppercase",
       fontSize: 10,
       letterSpacing: 2.5,
-      border: "1px solid white",
     },
   })

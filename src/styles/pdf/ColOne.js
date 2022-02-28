@@ -12,12 +12,9 @@ export default theme =>
     ...global,
 
     container: {
-      margin: "0 auto",
+      border: "1px solid black",
+      backgroundColor: "#fafafa",
       display: "flex",
-      fontFamily: "Prompt",
-      backgroundColor: theme.primary,
-      color: theme.textSide,
-      width: "100%",
-      height: "20%",
+      width: "50%",
     },
   })

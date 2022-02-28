@@ -6,14 +6,12 @@ const Contact = ({ data }) => {
   const { email, address, phone } = data
   return (
     <View style={styles.container}>
-      {/* <View style={styles.contact}> */}
       <View style={styles.contact}>
         <Text style={styles.heading}>Contact</Text>
         <Text>{phone}</Text>
         <Link style={styles.email} href={`mailto:${email}`}>
           {email}
         </Link>
-        {/* </View> */}
       </View>
       {address.showAddress ? (
         <View style={styles.address}>
