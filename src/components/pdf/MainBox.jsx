@@ -15,9 +15,17 @@ const MainBox = ({ data }) => {
 
   return (
     <View style={styles.container}>
-      {description ? <Description data={description} /> : null}
-      {experience ? <Experience data={experience} /> : null}
-      {education ? <Education data={education} /> : null}
+      <View
+        style={{
+          maxHeight: "100%",
+          width: "95%",
+          margin: "auto",
+        }}
+      >
+        {description ? <Description data={description} /> : null}
+        {experience ? <Experience data={experience} /> : null}
+        {education ? <Education data={education} /> : null}
+      </View>
     </View>
   )
 }

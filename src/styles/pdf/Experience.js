@@ -7,10 +7,9 @@ export default theme =>
 
     container: {
       display: "flex",
-      margin: "0 auto",
-      padingTop: 5,
-      width: "90%",
-      height: "auto",
+      padding: "5 15",
+      width: "100%",
+      maxHeight: "100%",
     },
 
     company: {
@@ -36,6 +35,5 @@ export default theme =>
       fontSize: 11,
       textTransform: "uppercase",
       color: theme.secondary,
-      marginTop: 5,
     },
   })

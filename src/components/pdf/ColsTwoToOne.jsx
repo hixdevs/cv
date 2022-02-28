@@ -7,15 +7,14 @@ import SideBar from "./SideBar"
 import usePdfTheme from "../../hooks/usePdfTheme"
 
 const ColsTwoToOne = ({ data }) => {
-  const { sideBar, mainBox } = data
   const theme = usePdfTheme()
   const styles = createStyles(theme)
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <MainBox data={mainBox} />
+        <MainBox data={data} />
         <View style={styles.panel}></View>
-        <SideBar data={sideBar} />
+        <SideBar data={data} />
       </Page>
     </Document>
   )

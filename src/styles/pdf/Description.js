@@ -8,9 +8,7 @@ export default StyleSheet.create({
   container: {
     display: "flex",
     margin: "10 auto",
-    padding: "0 15",
-    width: "100%",
-    height: "auto",
+    width: "90%",
     lineHeight: 1.2,
   },
 })

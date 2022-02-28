@@ -12,14 +12,13 @@ export default theme =>
     ...global,
 
     container: {
-      margin: "10 auto",
+      display: "flex",
+      width: "65%",
       fontSize: 9,
       letterSpacing: 0.3,
       lineHeight: 1.1,
       fontFamily: "Prompt",
-      display: "flex",
       backgroundColor: theme.ternary,
       color: theme.textMain,
-      width: "65%",
     },
   })
