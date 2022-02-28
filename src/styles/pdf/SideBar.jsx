@@ -13,6 +13,7 @@ export default theme =>
 
     container: {
       margin: "0 auto",
+      paddingTop: 10,
       fontFamily: "Prompt",
       fontSize: 9,
       backgroundColor: theme.primary,

@@ -1,7 +1,5 @@
 export default {
   personal: {
-    description:
-      "Software Engineer with demonstrated experience in both code development and maintenance. Possesses a strong ability to identify issues and offer creative solutions to complex problems, based on effective research, data analysis, and compelling communication. Eagers to learn new technologies, chooses best fit for the requirement.",
     firstName: "Wiktor",
     lastName: "Plaga",
     photo: "profile.jpg",
@@ -53,17 +51,7 @@ export default {
       url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
     },
   ],
-  technologies: [
-    ["Ruby", "Ruby on Rails", "Sinatra"],
-    ["Node", "Ember", "React", "jQuery"],
-    ["React Native"],
-    ["HTML", "CSS", "SCSS"],
-    ["MariaDB", "MySQL", "Postgres"],
-    ["Redis", "Mongo", "Firestore"],
-    ["Git"],
-    ["Docker", "Linux", "Nginx"],
-    ["PHP", "Wordpress", "Oxygen"],
-  ],
+
   description:
     "Software Engineer with demonstrated experience in both code development and maintenance. Possesses a strong ability to identify issues and offer creative solutions to complex problems, based on effective research, data analysis, and compelling communication. Eagers to learn new technologies, chooses best fit for the requirement.",
   experience: [
@@ -176,32 +164,7 @@ export default {
     ["Docker", "Linux", "Nginx"],
     ["PHP", "Wordpress", "Oxygen"],
   ],
-  related: [
-    {
-      name: "GitHub",
-      url: "https://github.com/wscourge",
-    },
-    {
-      name: "GitLab",
-      url: "https://gitlab.com/wscourge",
-    },
-    {
-      name: "Stack Overflow",
-      url: "https://stackoverflow.com/users/6439240/user3221",
-    },
-    {
-      name: "Blog on Ruby on Rails configuration",
-      url: "https://hixonrails.com/ruby-on-rails-tutorials",
-    },
-    {
-      name: "Warsaw Ruby Users Group Talk",
-      url: "https://www.youtube.com/watch?v=nOb_JGk8ojc",
-    },
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/wiktor-plaga-7a353a106/",
-    },
-  ],
+
   education: [
     {
       // school: [

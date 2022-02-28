@@ -8,7 +8,7 @@ export default theme =>
 
     container: {
       margin: "10 auto",
-      padding: "0 10",
+      padding: "0 15",
       width: "100%",
       height: "auto",
     },

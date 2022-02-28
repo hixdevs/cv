@@ -1,11 +1,10 @@
 import React from "react"
-import { Document, Page, View, Text } from "@react-pdf/renderer"
-
-import createStyles from "../../styles/pdf/ColOneToOne"
+import { Document, Page, View } from "@react-pdf/renderer"
+import createStyles from "../../styles/pdf/ColsOneToOne"
 import TopBar from "./TopBar"
 import usePdfTheme from "../../hooks/usePdfTheme"
-import ColOne from "./ColOne"
-import ColTwo from "./ColTwo"
+import ColLeft from "./ColLeft"
+import ColRight from "./ColRight"
 
 const ColsOneToOne = ({ data }) => {
   const theme = usePdfTheme()
@@ -16,8 +15,8 @@ const ColsOneToOne = ({ data }) => {
         <TopBar data={data} />
         <View style={styles.panel}></View>
         <View style={styles.main}>
-          <ColOne data={data} />
-          <ColTwo data={data} />
+          <ColLeft data={data} />
+          <ColRight data={data} />
         </View>
       </Page>
     </Document>

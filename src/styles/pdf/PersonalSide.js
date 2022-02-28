@@ -11,7 +11,7 @@ export default theme =>
     ...global,
     container: {
       flexDirection: "column",
-      padding: "0 10",
+      padding: "0 15",
       margin: "10 auto",
       width: "100%",
       height: "auto",

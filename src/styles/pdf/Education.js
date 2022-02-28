@@ -7,11 +7,11 @@ export default theme =>
     ...global,
 
     container: {
+      margin: "10 auto",
       display: "flex",
       width: "100%",
       height: "auto",
-      display: "flex",
-      padding: "0 20",
+      padding: "0 15",
     },
 
     heading: {
@@ -21,6 +21,7 @@ export default theme =>
       textTransform: "uppercase",
       color: theme.secondary,
       marginTop: 5,
+      marginBottom: 5,
     },
 
     header: {

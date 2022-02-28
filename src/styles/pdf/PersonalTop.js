@@ -35,12 +35,12 @@ export default theme =>
     personal: {
       margin: "0 auto",
       marginRight: 10,
-      width: "80%",
+      width: "85%",
     },
 
     name: {
       fontFamily: "RobotoCon",
-      color: theme.heading,
+      color: theme.secondary,
       fontSize: 28,
       letterSpacing: 4,
       lineHeight: 1.4,
@@ -48,6 +48,7 @@ export default theme =>
     },
 
     title: {
+      color: theme.secondary,
       fontFamily: "RobotoCon",
       display: "flex",
       textTransform: "uppercase",

@@ -7,7 +7,7 @@ export default theme =>
     ...global,
     container: {
       margin: "10 auto",
-      padding: "0 10",
+      padding: "0 15",
       width: "100%",
       display: "flex",
       height: "auto",
@@ -19,7 +19,7 @@ export default theme =>
     },
 
     email: {
-      color: theme.textLight,
+      color: theme.link,
       textDecoration: "none",
       textTransform: "uppercase",
     },
@@ -35,7 +35,7 @@ export default theme =>
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      marginBottom: 15,
-      color: "#d4b88a",
+      marginBottom: 10,
+      color: theme.secondary,
     },
   })
