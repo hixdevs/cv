@@ -13,36 +13,38 @@ export default theme =>
     },
 
     company: {
+      fontSize: 11,
       textDecoration: "none",
       color: theme.link,
       // marginBottom: 8,
       marginTop: 8,
-      textTransform: "uppercase",
+      // textTransform: "uppercase",
     },
 
     header: {
+      marginTop: 8,
+      marginBottom: 5,
       alignItems: "center",
       display: "flex",
       flexDirection: "row",
       justifyContent: "space-between",
+      color: theme.secondary,
     },
 
     years: {
-      textTransform: "uppercase",
+      // textTransform: "uppercase",
     },
     heading: {
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      color: theme.secondary,
-    },
-
-    title: {
-      marginTop: 8,
-      marginBottom: 5,
+      color: theme.primary,
     },
 
     list: {
       marginBottom: 5,
+    },
+    title: {
+      fontSize: 10,
     },
   })

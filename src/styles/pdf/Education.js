@@ -19,7 +19,7 @@ export default theme =>
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      color: theme.secondary,
+      color: theme.primary,
       marginBottom: 5,
     },
 
@@ -30,7 +30,6 @@ export default theme =>
       display: "flex",
       flexDirection: "row",
       justifyContent: "space-between",
-      // textTransform: "uppercase",
     },
 
     school: {
@@ -38,6 +37,9 @@ export default theme =>
       color: theme.secondary,
       marginBottom: 3,
       marginTop: 5,
-      textTransform: "uppercase",
+      fontSize: 10,
+    },
+    years: {
+      color: theme.secondary,
     },
   })
