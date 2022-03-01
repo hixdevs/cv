@@ -12,18 +12,25 @@ export default theme =>
       maxHeight: "100%",
     },
 
-    company: {
+    companyLink: {
       fontSize: 11,
       textDecoration: "none",
       color: theme.link,
       // marginBottom: 8,
-      marginTop: 8,
-      // textTransform: "uppercase",
+      marginTop: 6,
+    },
+
+    companyText: {
+      fontSize: 11,
+      textDecoration: "none",
+      color: theme.primary,
+      // marginBottom: 8,
+      marginTop: 6,
     },
 
     header: {
-      marginTop: 8,
-      marginBottom: 5,
+      marginTop: 6,
+      marginBottom: 6,
       alignItems: "center",
       display: "flex",
       flexDirection: "row",
@@ -31,9 +38,7 @@ export default theme =>
       color: theme.secondary,
     },
 
-    years: {
-      // textTransform: "uppercase",
-    },
+    years: {},
     heading: {
       letterSpacing: 1.5,
       fontSize: 11,
@@ -46,5 +51,14 @@ export default theme =>
     },
     title: {
       fontSize: 10,
+      // marginTop: 1,
+    },
+
+    topParagraph: {
+      marginBottom: 7,
+    },
+    bottomParagraph: {
+      marginTop: 2,
+      marginBottom: 5,
     },
   })

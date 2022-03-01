@@ -17,7 +17,7 @@ export default theme =>
       fontSize: 11,
       textTransform: "uppercase",
       marginBottom: 10,
-      color: theme.secondary,
+      color: theme.primary,
     },
     technologies: {
       lineHeight: 1.3,

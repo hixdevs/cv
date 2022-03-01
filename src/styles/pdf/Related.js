@@ -23,6 +23,6 @@ export default theme =>
       fontSize: 11,
       textTransform: "uppercase",
       marginBottom: 10,
-      color: theme.secondary,
+      color: theme.primary,
     },
   })

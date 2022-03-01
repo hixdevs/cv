@@ -16,7 +16,7 @@ export default theme =>
       letterSpacing: 1.5,
       fontSize: 11,
       textTransform: "uppercase",
-      color: theme.secondary,
+      color: theme.primary,
       marginBottom: 10,
     },
   })

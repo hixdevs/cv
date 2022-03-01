@@ -20,10 +20,10 @@ const ColLeft = ({ data }) => {
         {description ? <Description data={description} /> : null}
         {education ? <Education data={education} /> : null}
         {/* <View style={styles.techRel}> */}
-        <Technologies data={technologies} />
-        <Related data={related} />
+        {technologies ? <Technologies data={technologies} /> : null}
+        {related ? <Related data={related} /> : null}
         {/* </View> */}
-        <Interests data={interests} />
+        {interests ? <Interests data={interests} /> : null}
       </View>
     </View>
   )

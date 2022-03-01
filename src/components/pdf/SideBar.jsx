@@ -1,5 +1,5 @@
 import React from "react"
-import Contact from "./ContactSide"
+import ContactSide from "./ContactSide"
 import Interests from "./Interests"
 import PersonalSide from "./PersonalSide"
 import { View } from "@react-pdf/renderer"
@@ -22,7 +22,7 @@ const SideBar = ({ data }) => {
         }}
       >
         <PersonalSide data={personal} />
-        {contact ? <Contact data={contact} /> : null}
+        {contact ? <ContactSide data={contact} /> : null}
         {related ? <Related data={related} /> : null}
         {technologies ? <Technologies data={technologies} /> : null}
         {interests.length > 0 ? <Interests data={interests} /> : null}

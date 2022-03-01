@@ -5,6 +5,7 @@ export default class PSPDFKit extends Component {
 
   componentDidMount() {
     const url = URL.createObjectURL(this.props.blob)
+
     window.PSPDFKit.load({
       document: url,
       container: this.containerRef.current,
@@ -20,10 +21,10 @@ export default class PSPDFKit extends Component {
       <div
         ref={this.containerRef}
         style={{
-          width: "100%",
+          width: "70%",
           height: "100%",
           position: "absolute",
-          // left: "50%",
+          left: "30%",
         }}
       />
     )

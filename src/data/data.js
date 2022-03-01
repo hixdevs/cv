@@ -57,10 +57,12 @@ export default {
   experience: [
     {
       company: "Punkta",
-      link: "https://punkta.pl/",
+      link: "https://punkta.pl",
       positions: [
         {
           title: "Software Engineer",
+          topParagraph: "Software engineer responsible for all project",
+          bottomParagraph: "Software engineer responsible for all project",
           years: {
             start: "2018-08-01",
             end: "2020-05-01",
@@ -74,17 +76,6 @@ export default {
             "Active code review participation.",
           ],
         },
-        // {
-        //   title: "Analitic",
-        //   years: {
-        //     start: "2017-05-01",
-        //     end: "2018-08-01",
-        //   },
-        //   tasks: [
-        //     "Development and maintenance of the core company product.",
-        //     "Working in SCRUM development team.",
-        //   ],
-        // },
       ],
     },
     {
@@ -93,6 +84,8 @@ export default {
       positions: [
         {
           title: "Software Engineer",
+          topParagraph: "",
+          bottomParagraph: "",
           years: {
             start: "2016-08-01",
             end: "2018-08-01",
@@ -114,6 +107,8 @@ export default {
       positions: [
         {
           title: "Co-Founder",
+          topParagraph: "",
+          bottomParagraph: "",
           years: {
             start: "2018-11-01",
             end: "2020-09-01",
@@ -134,6 +129,8 @@ export default {
       positions: [
         {
           title: "Co-Founder",
+          topParagraph: "",
+          bottomParagraph: "",
           years: {
             start: "2019-10-01",
             end: "now",
@@ -156,6 +153,8 @@ export default {
       positions: [
         {
           title: "Software Engineer",
+          topParagraph: "",
+          bottomParagraph: "",
           years: {
             start: "2020-05-01",
             end: "2020-10-01",
@@ -177,6 +176,8 @@ export default {
       positions: [
         {
           title: "Software Engineer",
+          topParagraph: "",
+          bottomParagraph: "",
           years: {
             start: "2020-10-01",
             end: "now",

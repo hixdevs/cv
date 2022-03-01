@@ -22,9 +22,13 @@ const Experience = ({ data }) => {
       <View>
         {data.map((job, idx) => (
           <View key={idx}>
-            <Link style={styles.company} href={job.link}>
-              {job.company}
-            </Link>
+            {job.link ? (
+              <Link style={styles.companyLink} href={job.link}>
+                {job.company}
+              </Link>
+            ) : (
+              <Text style={styles.companyText}>{job.company}</Text>
+            )}
             {job.positions.map((position, idx) => (
               <View key={idx}>
                 <View style={styles.header}>
@@ -37,11 +41,21 @@ const Experience = ({ data }) => {
                       : formatDate(position.years.end)
                   }`}</Text>
                 </View>
+                {position.topParagraph ? (
+                  <Text style={styles.topParagraph}>
+                    {position.topParagraph}
+                  </Text>
+                ) : null}
                 <List>
                   {position.tasks.map((task, idx) => (
                     <Item key={idx}>{task}</Item>
                   ))}
                 </List>
+                {position.bottomParagraph ? (
+                  <Text style={styles.bottomParagraph}>
+                    {position.bottomParagraph}
+                  </Text>
+                ) : null}
               </View>
             ))}
           </View>

@@ -5,6 +5,7 @@ import usePdfTheme from "../../hooks/usePdfTheme"
 
 const ContactSide = ({ data }) => {
   const { email, address, phone } = data
+  const { street, postCode, city, state, country } = data.address
   const theme = usePdfTheme()
   const styles = createStyles(theme)
   return (
@@ -18,11 +19,11 @@ const ContactSide = ({ data }) => {
       </View>
       {address.showAddress ? (
         <View style={styles.address}>
-          <Text>{address.street}, </Text>
-          <Text>{address.postCode}, </Text>
-          <Text>{address.city}, </Text>
-          <Text>{address.state}, </Text>
-          <Text>{address.country}</Text>
+          <Text>{street}, </Text>
+          <Text>{postCode}, </Text>
+          <Text>{city}, </Text>
+          <Text>{state}, </Text>
+          <Text>{country}</Text>
         </View>
       ) : null}
     </View>
