@@ -6,10 +6,15 @@ export default StyleSheet.create({
 
   container: {
     width: "30%",
-    // height: "100%",
     position: "absolute",
     right: "70%",
-    // display: "flex",
-    // border: "1px solid black",
+  },
+
+  box: {
+    display: "flex",
+    padding: 10,
+    border: "1px solid lightgreen",
+    height: "auto",
+    justifyContent: "center",
   },
 })

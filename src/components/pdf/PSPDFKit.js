@@ -9,6 +9,7 @@ export default class PSPDFKit extends Component {
     window.PSPDFKit.load({
       document: url,
       container: this.containerRef.current,
+      // styleSheets: ["../../styles/pdf/PSPDFKit.css"],
     })
   }
 

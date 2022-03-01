@@ -1,20 +1,16 @@
 import React from "react"
-import { Button } from "react-bootstrap"
 import styles from "../../styles/pdf/ControlPanel"
-const ControlPanel = ({ blob }) => {
-  console.log("blob:", blob)
+import ColorInput from "../inputs/Color"
+import Download from "./Download"
 
+const ControlPanel = ({ data }) => {
   return (
     <>
       <div style={styles.container}>
-        <p>I am so cool even when i dont know it</p>
-        <a
-          href="http://localhost:3000/0b12ee0f-37d3-49ca-9029-a113dd3a6f4f"
-          download
-        >
-          download
-        </a>
-        <Button download="document.pdf">Oh hej</Button>
+        <div style={styles.box}>
+          <ColorInput />
+          <Download data={data} />
+        </div>
       </div>
     </>
   )

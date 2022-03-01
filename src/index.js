@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { BlobProvider } from "@react-pdf/renderer"
+
 import PSPDFKit from "./components/pdf/PSPDFKit"
 // import ColsOneToTwo from "./components/pdf/ColsOneToTwo"
 // import ColsTwoToOne from "./components/pdf/ColsTwoToOne"
@@ -14,12 +15,14 @@ ReactDOM.render(
     <PdfThemeContext.Provider value={theme}>
       <BlobProvider document={<ColsOneToOne data={data} />}>
         {({ blob, url, loading, error }) => {
+          console.log("url:", url)
+
           if (blob) {
             return (
-              <>
-                <ControlPanel blob={blob} />
+              <div>
+                <ControlPanel data={data} />
                 <PSPDFKit blob={blob} />
-              </>
+              </div>
             )
           }
           if (error) {
