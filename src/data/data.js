@@ -167,47 +167,54 @@ export default {
 
   education: [
     {
-      // school: [
-
-      //   {
-      //     name: "University of Warsaw",
-      //     degree: "Master",
-      //     faculty: "Psychology",
-      //     specialization: "Psychoteraphy",
-      //     years: {
-      //       start: "2014-10-01",
-      //       end: "2019-06-20",
-      //     },
-      //   },
-      // ],
       school: "University of Warsaw",
-      degree: "Master",
       faculty: "Psychology",
-      specialization: "Psychoteraphy",
-      years: {
-        start: "2014-10-01",
-        end: "2019-06-20",
-      },
+      degrees: [
+        {
+          degree: "Master",
+          specialization: "Psychoteraphy",
+          years: {
+            start: "2014-10-01",
+            end: "2019-06-20",
+          },
+        },
+      ],
+    },
+    {
+      school: "University of Warsaw",
+      faculty: "IT",
+      degrees: [
+        {
+          degree: "Bachelor",
+          specialization: "Databases",
+          years: {
+            start: "2014-10-01",
+            end: "2016-06-20",
+          },
+        },
+      ],
     },
     {
       school: "Warsaw University of Life Sciences",
-      degree: "Master",
       faculty: "Forestry",
-      specialization: "Geomatic",
-      years: {
-        start: "2015-10-01",
-        end: "2020-06-20",
-      },
-    },
-    {
-      school: "Warsaw University of Life Sciences",
-      degree: "Engeenier",
-      faculty: "Forestry",
-      specialization: "Geomatic",
-      years: {
-        start: "2015-10-01",
-        end: "2020-06-20",
-      },
+      degrees: [
+        {
+          degree: "Master",
+          specialization: "Geomatic",
+          years: {
+            start: "2018-10-01",
+            end: "2020-06-20",
+          },
+        },
+        {
+          degree: "Engeenier",
+          specialization: "Geomatic",
+          years: {
+            start: "2015-10-01",
+            end: "2018-06-20",
+          },
+        },
+      ],
     },
   ],
 }

@@ -11,7 +11,7 @@ import { PdfThemeContext, theme } from "./hooks/usePdfTheme"
 
 ReactDOM.render(
   <div>
-    <ControlPanel />
+    {/* <ControlPanel /> */}
     <PdfThemeContext.Provider value={theme}>
       <BlobProvider document={<ColsOneToOne data={data} />}>
         {({ blob, url, loading, error }) => {

@@ -26,21 +26,19 @@ export default theme =>
 
     header: {
       widht: "100%",
+      // marginBottom: 2,
       alignItems: "center",
       display: "flex",
       flexDirection: "row",
       justifyContent: "space-between",
+      // textTransform: "uppercase",
     },
 
     school: {
       textDecoration: "none",
       color: theme.secondary,
-      marginBottom: 5,
+      marginBottom: 3,
       marginTop: 5,
       textTransform: "uppercase",
-    },
-
-    description: {
-      lineHeight: 1.3,
     },
   })
