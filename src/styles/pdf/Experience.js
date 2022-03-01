@@ -15,7 +15,7 @@ export default theme =>
     company: {
       textDecoration: "none",
       color: theme.link,
-      marginBottom: 8,
+      // marginBottom: 8,
       marginTop: 8,
       textTransform: "uppercase",
     },
@@ -35,5 +35,14 @@ export default theme =>
       fontSize: 11,
       textTransform: "uppercase",
       color: theme.secondary,
+    },
+
+    title: {
+      marginTop: 8,
+      marginBottom: 5,
+    },
+
+    list: {
+      marginBottom: 5,
     },
   })

@@ -18,7 +18,6 @@ ReactDOM.render(
           if (blob) {
             return <PSPDFKit blob={blob} />
           }
-
           if (error) {
             return error
           }

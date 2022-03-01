@@ -20,13 +20,12 @@ export default theme =>
       fontSize: 11,
       textTransform: "uppercase",
       color: theme.secondary,
-      marginTop: 5,
       marginBottom: 5,
     },
 
     header: {
       widht: "100%",
-      // marginBottom: 2,
+      marginBottom: 2,
       alignItems: "center",
       display: "flex",
       flexDirection: "row",

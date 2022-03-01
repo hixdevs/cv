@@ -8,7 +8,7 @@ export default theme =>
 
     container: {
       display: "flex",
-      margin: "6 auto",
+      margin: "6 auto 10",
       width: "90%",
       lineHeight: 1.2,
     },
