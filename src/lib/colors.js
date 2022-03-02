@@ -1,4 +1,4 @@
-export const colors = [
+export const inputs = [
   {
     name: "primary",
     default: "#42413e",
