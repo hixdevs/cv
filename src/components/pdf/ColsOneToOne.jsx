@@ -8,9 +8,10 @@ import ColRight from "./ColRight"
 
 const ColsOneToOne = ({ data }) => {
   const theme = usePdfTheme()
-  console.log("ColsOneToOne", theme)
-
+  console.log("theme:", theme)
+  
   const styles = createStyles(theme)
+
   return (
     <Document>
       <Page size="A4" style={styles.page}>
