@@ -5,10 +5,11 @@ import TopBar from "./TopBar"
 import usePdfTheme from "../../hooks/usePdfTheme"
 import ColLeft from "./ColLeft"
 import ColRight from "./ColRight"
-import { usePDF } from "@react-pdf/renderer"
 
 const ColsOneToOne = ({ data }) => {
   const theme = usePdfTheme()
+  console.log("ColsOneToOne", theme)
+
   const styles = createStyles(theme)
   return (
     <Document>

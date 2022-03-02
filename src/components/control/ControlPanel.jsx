@@ -3,12 +3,12 @@ import "../../styles/control/ControlPanel.css"
 import FormColors from "./form/Colors.js"
 import Download from "../pdf/Download"
 
-const ControlPanel = ({ data }) => {
+const ControlPanel = ({ data, onChange }) => {
   return (
     <>
       <div className="container">
         <div className="colors">
-          <FormColors />
+          <FormColors onChange={onChange} />
         </div>
         <Download data={data} />
       </div>

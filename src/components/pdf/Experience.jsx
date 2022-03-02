@@ -4,6 +4,8 @@ import createStyles from "../../styles/pdf/Experience"
 import List, { Item } from "./List"
 import { format } from "date-fns"
 import usePdfTheme from "../../hooks/usePdfTheme"
+import { PdfThemeContext } from "../../index.js"
+import { useContext } from "react"
 
 const Experience = ({ data }) => {
   data.sort((a, b) =>
@@ -14,6 +16,7 @@ const Experience = ({ data }) => {
   )
   const formatDate = date => format(new Date(date), ["MMM yyyy"])
   const theme = usePdfTheme()
+
   const styles = createStyles(theme)
 
   return (
