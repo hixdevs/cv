@@ -4,8 +4,8 @@ export const theme = {
   primary: "#42413e",
   teranry: "#fafafa",
   secondary: "#c4ad93",
-  textLight: "#fff",
-  textDark: "#222",
+  textLight: "#ffffff",
+  textDark: "#222222",
   link: "#54b2ff",
   img: "circle",
 }
