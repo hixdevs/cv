@@ -12,7 +12,6 @@ export default theme =>
     panel: {
       backgroundColor: theme.secondary,
       height: "1%",
-      opacity: 0.5,
     },
     main: {
       fontSize: 9,

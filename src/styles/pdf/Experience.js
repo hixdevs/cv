@@ -7,7 +7,7 @@ export default theme =>
 
     container: {
       display: "flex",
-      padding: "5 15",
+      padding: "0 15",
       width: "100%",
       maxHeight: "100%",
     },
@@ -17,7 +17,7 @@ export default theme =>
       textDecoration: "none",
       color: theme.link,
       // marginBottom: 8,
-      marginTop: 6,
+      marginTop: 10,
     },
 
     companyText: {
@@ -29,28 +29,25 @@ export default theme =>
     },
 
     header: {
+      fontSize: 10,
       marginTop: 6,
       marginBottom: 6,
       alignItems: "center",
       display: "flex",
       flexDirection: "row",
       justifyContent: "space-between",
-      color: theme.secondary,
+      color: theme.textDark,
     },
 
-    years: {},
     heading: {
       letterSpacing: 1.5,
-      fontSize: 11,
+      fontSize: 12,
       textTransform: "uppercase",
       color: theme.primary,
     },
 
-    list: {
-      marginBottom: 5,
-    },
     title: {
-      fontSize: 10,
+      fontSize: 11,
       // marginTop: 1,
     },
 

@@ -12,7 +12,7 @@ const PersonalSide = ({ data }) => {
       <View style={styles.image}>
         <Image
           src={{
-            uri: "http://localhost:3000/img/wp.jpg",
+            uri: `http://localhost:3000/img/${data.photo}`,
             method: "GET",
             headers: {},
             body: "",

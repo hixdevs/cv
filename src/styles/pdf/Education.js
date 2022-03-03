@@ -7,6 +7,7 @@ export default theme =>
     ...global,
 
     container: {
+      fontSize: 10,
       margin: "10 auto",
       display: "flex",
       width: "100%",
@@ -17,13 +18,15 @@ export default theme =>
     heading: {
       widht: "100%",
       letterSpacing: 1.5,
-      fontSize: 11,
+      fontSize: 12,
       textTransform: "uppercase",
       color: theme.primary,
       marginBottom: 5,
+      paddingTop: 3,
     },
 
     header: {
+      fontSize: 10,
       widht: "100%",
       marginBottom: 2,
       alignItems: "center",
@@ -34,12 +37,14 @@ export default theme =>
 
     school: {
       textDecoration: "none",
-      color: theme.secondary,
-      marginBottom: 3,
+      color: theme.textDark,
+      marginBottom: 7,
       marginTop: 5,
-      fontSize: 10,
+      fontSize: 11,
     },
+
     years: {
-      color: theme.secondary,
+      color: theme.textDark,
+      fontSize: 10,
     },
   })

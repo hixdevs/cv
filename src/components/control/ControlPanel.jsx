@@ -1,16 +1,16 @@
 import React from "react"
 import "../../styles/control/ControlPanel.css"
 import FormColors from "./form/Colors.js"
-import Download from "../pdf/Download"
+import Download from "./Download"
 
-const ControlPanel = ({ data, onChange }) => {
+const ControlPanel = ({ data, onChange, theme }) => {
   return (
     <>
       <div className="container">
         <div className="colors">
           <FormColors onChange={onChange} />
         </div>
-        <Download data={data} />
+        <Download data={data} theme={theme} />
       </div>
     </>
   )

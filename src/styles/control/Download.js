@@ -1,6 +1,6 @@
 import { StyleSheet } from "@react-pdf/renderer"
 
-import global from "./global"
+import global from "../pdf/global"
 
 export default StyleSheet.create({
   ...global,

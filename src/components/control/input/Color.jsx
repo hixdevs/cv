@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Form, FormGroup } from "react-bootstrap"
 
 const InputColor = ({ name, defaultValue, label, onChange }) => {
@@ -9,7 +9,6 @@ const InputColor = ({ name, defaultValue, label, onChange }) => {
         type="color"
         id={name}
         name={name}
-        title={name}
         defaultValue={defaultValue}
         onChange={onChange}
         label={label}

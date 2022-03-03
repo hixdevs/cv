@@ -15,10 +15,10 @@ export default theme =>
 
     heading: {
       letterSpacing: 1.5,
-      fontSize: 11,
+      fontSize: 12,
       textTransform: "uppercase",
       marginBottom: 15,
-      color: theme.primary,
+      color: theme.secondary,
     },
 
     interests: {
