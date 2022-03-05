@@ -4,8 +4,6 @@ import InputColor from "../input/Color"
 import { inputs } from "../../../lib/inputs"
 
 const FormColors = ({ onChange, theme }) => {
-  // inputs.map(input => console.log(input.name, ":", theme[input.name]))
-
   return (
     <Form>
       {inputs.map((input, idx) => (

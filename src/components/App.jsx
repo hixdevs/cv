@@ -10,9 +10,10 @@ import data from "../data/dataop"
 import ControlPanel from "../components/control/ControlPanel"
 import { useState } from "react"
 import { PdfThemeContext } from "../hooks/usePdfTheme"
+import { useTheme } from "../lib/store"
 
 const App = () => {
-  const [theme, setTheme] = useState({
+  const [theme, setTheme] = useTheme({
     // primary: "#42413E",
     // ternary: "#fafafa",
     // secondary: "#c4ad93",
@@ -27,6 +28,12 @@ const App = () => {
     link: "#54b2ff",
     // img: "square",
   })
+
+  const [content, setContent] = useState(JSON.stringify(data, undefined, 2))
+
+  const onChangeContent = event => {
+    setContent(event.target.value)
+  }
 
   const onChange = event => {
     setTheme(prevState => ({
