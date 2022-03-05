@@ -35,13 +35,11 @@ const App = () => {
     setContent(event.target.value)
   }
 
-  const onChange = event => {
+  const onChangeColor = event => {
     setTheme(prevState => ({
       ...prevState,
       [event.target.name]: event.target.value,
     }))
-
-    console.log("theme:", theme)
   }
   return (
     <div>
@@ -50,7 +48,7 @@ const App = () => {
           <Col>
             <ControlPanel
               data={JSON.parse(content)}
-              onChange={onChange}
+              onChange={onChangeColor}
               theme={theme}
               content={content}
             />
