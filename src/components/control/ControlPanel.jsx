@@ -8,7 +8,7 @@ const ControlPanel = ({ data, onChange, theme }) => {
     <>
       <div className="container">
         <div className="colors">
-          <FormColors onChange={onChange} />
+          <FormColors onChange={onChange} theme={theme} />
         </div>
         <Download data={data} theme={theme} />
       </div>

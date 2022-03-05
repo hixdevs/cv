@@ -1,7 +1,5 @@
 import React from "react"
-import ContactSide from "./ContactSide"
 import Interests from "./Interests"
-import PersonalSide from "./PersonalSide"
 import { View } from "@react-pdf/renderer"
 import createStyles from "../../styles/pdf/SideBarLessDense"
 import Rodo from "./Rodo"
@@ -12,7 +10,7 @@ import ContactLessDense from "./ContactLessDense"
 // import Technologies from "./Technologies"
 
 const SideBarLessDense = ({ data }) => {
-  const { personal, contact, interests, rodo, related, technologies } = data
+  const { personal, contact, interests, rodo } = data
   const theme = usePdfTheme()
   const styles = createStyles(theme)
   return (
