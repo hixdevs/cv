@@ -4,13 +4,13 @@ import FormColors from "./form/Colors.js"
 import Download from "./Download"
 import FormData from "./form/Data"
 
-const ControlPanel = ({ data, onChange, theme }) => {
+const ControlPanel = ({ data, onChange, theme, content }) => {
   return (
     <>
       <div className="container">
         <div className="colors">
           <FormColors onChange={onChange} theme={theme} />
-          <FormData />
+          <FormData content={content} />
         </div>
         <Download data={data} theme={theme} />
       </div>

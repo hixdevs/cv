@@ -48,7 +48,12 @@ const App = () => {
       <Container fluid="xxl">
         <Row>
           <Col>
-            <ControlPanel data={data} onChange={onChange} theme={theme} />
+            <ControlPanel
+              data={JSON.parse(content)}
+              onChange={onChange}
+              theme={theme}
+              content={content}
+            />
           </Col>
           <Col>
             <PDFViewer
@@ -58,7 +63,7 @@ const App = () => {
               showToolbar={false}
             >
               <PdfThemeContext.Provider value={theme}>
-                <LessDense data={data} />
+                <LessDense data={JSON.parse(content)} />
               </PdfThemeContext.Provider>
             </PDFViewer>
           </Col>
