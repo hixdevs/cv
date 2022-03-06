@@ -10,19 +10,12 @@ import data from "../data/dataop"
 import ControlPanel from "../components/control/ControlPanel"
 import { PdfThemeContext } from "../hooks/usePdfTheme"
 import { useTheme, useContent } from "../lib/store"
+import { themeDefault } from "../lib/colors.js"
 
 const App = () => {
   const [content, setContent] = useContent(JSON.stringify(data, undefined, 2))
   const [submitDisabled, setSubmitDisabled] = useState(false)
-  const [theme, setTheme] = useTheme({
-    primary: "#5C7062",
-    ternary: "#fffcef",
-    secondary: "#D1D1D1",
-    textLight: "#ffffff",
-    textDark: "#9E9E9E",
-    link: "#54b2ff",
-    // img: "square",
-  })
+  const [theme, setTheme] = useTheme({ themeDefault })
 
   const onChangeColor = event => {
     setTheme(prevState => ({

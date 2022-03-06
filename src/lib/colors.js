@@ -10,9 +10,12 @@ export const inputs = [
   { name: "textDark", default: "#222222", label: "dark text" },
   { name: "link", default: "#54b2ff", label: "link" },
 ]
-// primary: "#42413E",
-// ternary: "#fafafa",
-// secondary: "#c4ad93",
-// textLight: "#ffffff",
-// textDark: "#222222",
-// link: "#54b2ff",
+
+export const themeDefault = {
+  primary: "#42413E",
+  ternary: "#fafafa",
+  secondary: "#c4ad93",
+  textLight: "#ffffff",
+  textDark: "#222222",
+  link: "#54b2ff",
+}

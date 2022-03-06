@@ -3,6 +3,7 @@ import "../../styles/control/ControlPanel.css"
 import FormColors from "./form/Colors.js"
 import Download from "./Download"
 import FormData from "./form/Data"
+import FormLayouts from "./form/Layouts"
 
 const ControlPanel = ({
   data,
@@ -19,6 +20,7 @@ const ControlPanel = ({
         <div className="colors">
           <FormColors onChangeColor={onChangeColor} theme={theme} />
         </div>
+        <FormLayouts />
         <FormData
           content={content}
           onSubmit={onSubmit}

@@ -1,7 +1,7 @@
 import React from "react"
 import { Form } from "react-bootstrap"
 import InputColor from "../input/Color"
-import { inputs } from "../../../lib/inputs"
+import { inputs } from "../../../lib/colors"
 
 const FormColors = ({ onChangeColor, theme }) => {
   return (

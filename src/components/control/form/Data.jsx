@@ -2,7 +2,6 @@ import React from "react"
 import { Form, Button } from "react-bootstrap"
 // import ReactJson from "react-json-view"
 //
-// import data from "../../../data/dataop"
 
 const FormData = ({ content, onSubmit, submitDisabled, onChangeContent }) => {
   return (
