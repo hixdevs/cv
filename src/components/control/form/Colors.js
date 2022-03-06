@@ -5,7 +5,7 @@ import { inputs } from "../../../lib/inputs"
 
 const FormColors = ({ onChangeColor, theme }) => {
   return (
-    <Form className="d-flex flex-row flex-wrap justify-content-center">
+    <Form className="d-flex justify-content-between">
       {inputs.map((input, idx) => (
         <InputColor
           key={idx}
