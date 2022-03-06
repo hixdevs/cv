@@ -7,9 +7,10 @@ import ColLeft from "./ColLeft"
 import ColRight from "./ColRight"
 
 const ColsOneToOne = ({ data }) => {
+  console.log("data:", data)
+
   const theme = usePdfTheme()
-  console.log("theme:", theme)
-  
+
   const styles = createStyles(theme)
 
   return (

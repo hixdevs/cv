@@ -11,17 +11,22 @@ const Contact = ({ data }) => {
   return (
     <View style={styles.container}>
       <View style={styles.contact}>
-        {phone ? <Text>{phone}</Text> : null}
-        <Link style={styles.email} href={`mailto:${email}`}>
-          {email}
-        </Link>
-        {address.showAddress ? (
-          <View>
-            <Text>
-              {`${street}, ${postCode}, ${city}, ${state}, ${country} `}{" "}
-            </Text>
-          </View>
-        ) : null}
+        <Text>
+          {phone ? phone : null}
+          {"  "}
+          {
+            <Link style={styles.email} href={`mailto:${email}`}>
+              {email}
+            </Link>
+          }
+          {address.showAddress ? (
+            <View>
+              <Text>
+                {`  ${street}, ${postCode}, ${city}, ${state}, ${country} `}{" "}
+              </Text>
+            </View>
+          ) : null}
+        </Text>
       </View>
     </View>
   )

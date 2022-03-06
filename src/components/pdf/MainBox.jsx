@@ -19,7 +19,7 @@ const MainBox = ({ data }) => {
         style={{
           maxHeight: "100%",
           width: "95%",
-          margin: "auto",
+          marginTop: 10,
         }}
       >
         {description ? <Description data={description} /> : null}

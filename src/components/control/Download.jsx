@@ -1,16 +1,16 @@
 import React from "react"
 import { PDFDownloadLink } from "@react-pdf/renderer"
-// import ColsOneToOne from "../pdf/ColsOneToOne"
+import ColsOneToOne from "../pdf/ColsOneToOne"
 import { PdfThemeContext } from "../../hooks/usePdfTheme"
-// import ColsOneToTwo from "../pdf/ColsOneToTwo"
+import ColsOneToTwo from "../pdf/ColsOneToTwo"
 import LessDense from "../pdf/LessDense"
 
-const Download = ({ data, theme }) => {
+const Download = ({ data, theme, LayoutComponent }) => {
   return (
     <PDFDownloadLink
       document={
         <PdfThemeContext.Provider value={theme}>
-          <LessDense data={data} />
+          <LayoutComponent data={data} />
         </PdfThemeContext.Provider>
       }
       fileName="resume.pdf"

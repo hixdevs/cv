@@ -16,7 +16,8 @@ export default theme =>
     },
 
     contact: {
-      justifyContent: "space-between",
+      justifyContent: "flex-start",
+      justifyItems: "space-around",
       display: "flex",
       flexDirection: "row",
     },

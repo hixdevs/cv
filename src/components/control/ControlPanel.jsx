@@ -16,6 +16,7 @@ const ControlPanel = ({
   onSelect,
   selectedLayout,
   setSelectedLayout,
+  LayoutComponent,
 }) => {
   return (
     <>
@@ -35,7 +36,7 @@ const ControlPanel = ({
           submitDisabled={submitDisabled}
           onChangeContent={onChangeContent}
         />
-        <Download data={data} theme={theme} />
+        <Download data={data} theme={theme} LayoutComponent={LayoutComponent} />
       </div>
     </>
   )

@@ -9,16 +9,14 @@ import data from "../data/dataop"
 // import data from "../data/data"
 import ControlPanel from "../components/control/ControlPanel"
 import { PdfThemeContext } from "../hooks/usePdfTheme"
-import { useTheme, useContent } from "../lib/store"
+import { useTheme, useContent, useSelectedLayout } from "../lib/store"
 import { themeDefault } from "../lib/colors.js"
-// import Select from "react-select"
-import { layouts } from "..//lib/layouts"
 
 const App = () => {
   const [content, setContent] = useContent(JSON.stringify(data, undefined, 2))
   const [submitDisabled, setSubmitDisabled] = useState(false)
   const [theme, setTheme] = useTheme({ themeDefault })
-  const [selectedLayout, setSelectedLayout] = useState("ColsOneToOne")
+  const [selectedLayout, setSelectedLayout] = useSelectedLayout("ColsOneToOne")
 
   const onChangeColor = event => {
     setTheme(prevState => ({
@@ -66,6 +64,7 @@ const App = () => {
               onSelect={onSelect}
               selectedLayout={selectedLayout}
               setSelectedLayout={setSelectedLayout}
+              LayoutComponent={LayoutComponent}
             />
           </Col>
           <Col>

@@ -5,7 +5,7 @@ import usePdfTheme from "../../hooks/usePdfTheme"
 import ContactTop from "./ContactTop"
 
 const PersonalTop = ({ data }) => {
-  const { firstName, lastName, title } = data.personal
+  const { firstName, lastName, title, photo } = data.personal
 
   const theme = usePdfTheme()
   const styles = createStyles(theme)
@@ -14,7 +14,7 @@ const PersonalTop = ({ data }) => {
       <View style={styles.imgageContainer}>
         <Image
           src={{
-            uri: "http://localhost:3000/img/wp.jpg",
+            uri: `http://localhost:3000/img/${photo}`,
             method: "GET",
             headers: {},
             body: "",
