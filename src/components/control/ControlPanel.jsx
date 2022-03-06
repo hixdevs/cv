@@ -13,6 +13,9 @@ const ControlPanel = ({
   content,
   submitDisabled,
   onChangeContent,
+  onSelect,
+  selectedLayout,
+  setSelectedLayout,
 }) => {
   return (
     <>
@@ -20,7 +23,12 @@ const ControlPanel = ({
         <div className="colors">
           <FormColors onChangeColor={onChangeColor} theme={theme} />
         </div>
-        <FormLayouts />
+
+        <FormLayouts
+          selectedLayout={selectedLayout}
+          setSelectedLayout={setSelectedLayout}
+          onSelect={onSelect}
+        />
         <FormData
           content={content}
           onSubmit={onSubmit}
