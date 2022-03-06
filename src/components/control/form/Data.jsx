@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Form, Button } from "react-bootstrap"
 // import data from "../../../data/dataop"
 
@@ -9,8 +9,8 @@ const FormData = ({ content, onSubmit }) => {
         <Form.Label>Resume Data</Form.Label>
         <Form.Control as="textarea" rows={30} defaultValue={content} />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <Button variant="primary" type="submit" className="mb-3">
+        Update Resume
       </Button>
     </Form>
   )

@@ -35,11 +35,9 @@ export default theme =>
       letterSpacing: 4,
       lineHeight: 1.4,
       padding: "10 0",
-      textTransform: "uppercase",
     },
 
     title: {
-      textTransform: "uppercase",
       fontSize: 10,
       marginBottom: 5,
       letterSpacing: 2.5,

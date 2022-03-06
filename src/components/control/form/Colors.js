@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap"
 import InputColor from "../input/Color"
 import { inputs } from "../../../lib/inputs"
 
-const FormColors = ({ onChange, theme }) => {
+const FormColors = ({ onChangeColor, theme }) => {
   return (
     <Form className="d-flex flex-row flex-wrap justify-content-center">
       {inputs.map((input, idx) => (
@@ -11,7 +11,7 @@ const FormColors = ({ onChange, theme }) => {
           key={idx}
           name={input.name}
           label={input.label}
-          onChange={onChange}
+          onChangeColor={onChangeColor}
           value={theme[input.name]}
         />
       ))}

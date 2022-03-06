@@ -8,9 +8,8 @@ import LessDense from "../components/pdf/LessDense"
 import data from "../data/dataop"
 // import data from "../data/data"
 import ControlPanel from "../components/control/ControlPanel"
-import { useState } from "react"
 import { PdfThemeContext } from "../hooks/usePdfTheme"
-import { useTheme } from "../lib/store"
+import { useTheme, useContent } from "../lib/store"
 
 const App = () => {
   const [theme, setTheme] = useTheme({
@@ -29,16 +28,12 @@ const App = () => {
       [event.target.name]: event.target.value,
     }))
   }
-  const [content, setContent] = useState(JSON.stringify(data, undefined, 2))
+  const [content, setContent] = useContent(JSON.stringify(data, undefined, 2))
 
   const onSubmit = event => {
     event.preventDefault()
-    setContent(event.target.elements[0].value)
-    console.log(event.target.elements[0].value)
+    setContent(event.target.elements.content.value)
   }
-  // const onChangeContent = event => {
-  //   setContent(event.target.value)
-  // }
 
   return (
     <div>
@@ -47,7 +42,7 @@ const App = () => {
           <Col>
             <ControlPanel
               data={JSON.parse(content)}
-              onChange={onChangeColor}
+              onChangeColor={onChangeColor}
               theme={theme}
               content={content}
               onSubmit={onSubmit}

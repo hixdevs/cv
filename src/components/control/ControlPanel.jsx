@@ -2,18 +2,16 @@ import React from "react"
 import "../../styles/control/ControlPanel.css"
 import FormColors from "./form/Colors.js"
 import Download from "./Download"
-import Submit from "./SubmitBtn"
 import FormData from "./form/Data"
 
-const ControlPanel = ({ data, onChange, onSubmit, theme, content }) => {
+const ControlPanel = ({ data, onChangeColor, onSubmit, theme, content }) => {
   return (
     <>
       <div className="container">
         <div className="colors">
-          <FormColors onChange={onChange} theme={theme} />
-          <FormData content={content} onSubmit={onSubmit} />
+          <FormColors onChangeColor={onChangeColor} theme={theme} />
         </div>
-        {/* <Submit /> */}
+        <FormData content={content} onSubmit={onSubmit} />
         <Download data={data} theme={theme} />
       </div>
     </>

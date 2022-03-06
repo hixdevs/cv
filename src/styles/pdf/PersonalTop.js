@@ -44,14 +44,12 @@ export default theme =>
       fontSize: 28,
       letterSpacing: 4,
       lineHeight: 1.4,
-      textTransform: "uppercase",
     },
 
     title: {
       color: theme.secondary,
       fontFamily: "RobotoCon",
       display: "flex",
-      textTransform: "uppercase",
       fontSize: 10,
       letterSpacing: 2.5,
     },

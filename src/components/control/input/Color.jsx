@@ -1,7 +1,7 @@
 import React from "react"
 import { Form, FormGroup } from "react-bootstrap"
 
-const InputColor = ({ name, label, onChange, value }) => {
+const InputColor = ({ name, label, onChangeColor, value }) => {
   return (
     <FormGroup className="mb-2">
       <Form.Label htmlFor={name}>{label}</Form.Label>
@@ -10,7 +10,7 @@ const InputColor = ({ name, label, onChange, value }) => {
         id={name}
         name={name}
         value={value}
-        onChange={onChange}
+        onChange={onChangeColor}
         label={label}
       />
     </FormGroup>
