@@ -5,15 +5,15 @@ import Download from "./Download"
 import Submit from "./SubmitBtn"
 import FormData from "./form/Data"
 
-const ControlPanel = ({ data, onChange, onChangeContent, theme, content }) => {
+const ControlPanel = ({ data, onChange, onSubmit, theme, content }) => {
   return (
     <>
       <div className="container">
         <div className="colors">
           <FormColors onChange={onChange} theme={theme} />
-          <FormData content={content} onChange={onChangeContent} />
+          <FormData content={content} onSubmit={onSubmit} />
         </div>
-        <Submit />
+        {/* <Submit /> */}
         <Download data={data} theme={theme} />
       </div>
     </>

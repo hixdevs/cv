@@ -14,12 +14,6 @@ import { useTheme } from "../lib/store"
 
 const App = () => {
   const [theme, setTheme] = useTheme({
-    // primary: "#42413E",
-    // ternary: "#fafafa",
-    // secondary: "#c4ad93",
-    // textLight: "#ffffff",
-    // textDark: "#222222",
-    // link: "#54b2ff",
     primary: "#5C7062",
     ternary: "#fffcef",
     secondary: "#D1D1D1",
@@ -29,18 +23,23 @@ const App = () => {
     // img: "square",
   })
 
-  const [content, setContent] = useState(JSON.stringify(data, undefined, 2))
-
-  const onChangeContent = event => {
-    setContent(event.target.value)
-  }
-
   const onChangeColor = event => {
     setTheme(prevState => ({
       ...prevState,
       [event.target.name]: event.target.value,
     }))
   }
+  const [content, setContent] = useState(JSON.stringify(data, undefined, 2))
+
+  const onSubmit = event => {
+    event.preventDefault()
+    setContent(event.target.elements[0].value)
+    console.log(event.target.elements[0].value)
+  }
+  // const onChangeContent = event => {
+  //   setContent(event.target.value)
+  // }
+
   return (
     <div>
       <Container fluid="xxl">
@@ -51,6 +50,7 @@ const App = () => {
               onChange={onChangeColor}
               theme={theme}
               content={content}
+              onSubmit={onSubmit}
             />
           </Col>
           <Col>
