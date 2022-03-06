@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { PDFViewer } from "@react-pdf/renderer"
 import { Container, Row, Col } from "react-bootstrap"
 import LessDense from "../components/pdf/LessDense"
@@ -12,6 +12,8 @@ import { PdfThemeContext } from "../hooks/usePdfTheme"
 import { useTheme, useContent } from "../lib/store"
 
 const App = () => {
+  const [content, setContent] = useContent(JSON.stringify(data, undefined, 2))
+  const [submitDisabled, setSubmitDisabled] = useState(false)
   const [theme, setTheme] = useTheme({
     primary: "#5C7062",
     ternary: "#fffcef",
@@ -28,11 +30,15 @@ const App = () => {
       [event.target.name]: event.target.value,
     }))
   }
-  const [content, setContent] = useContent(JSON.stringify(data, undefined, 2))
 
   const onSubmit = event => {
     event.preventDefault()
     setContent(event.target.elements.content.value)
+    setSubmitDisabled(true)
+  }
+
+  const onChangeContent = () => {
+    setSubmitDisabled(false)
   }
 
   return (
@@ -46,6 +52,8 @@ const App = () => {
               theme={theme}
               content={content}
               onSubmit={onSubmit}
+              submitDisabled={submitDisabled}
+              onChangeContent={onChangeContent}
             />
           </Col>
           <Col>
