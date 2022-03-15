@@ -3,7 +3,8 @@ import "../../styles/control/ControlPanel.css"
 import FormColors from "./form/Colors.js"
 import Download from "./Download"
 import FormData from "./form/Data"
-import FormLayouts from "./form/Layouts"
+import FormSelectLayout from "./form/SelectLayout"
+import FormRadioLayouts from "./form/RadioLayout"
 
 const ControlPanel = ({
   data,
@@ -17,6 +18,8 @@ const ControlPanel = ({
   selectedLayout,
   setSelectedLayout,
   LayoutComponent,
+  onChangeRadioLayout,
+  selectedRadioLayout,
 }) => {
   return (
     <>
@@ -25,7 +28,12 @@ const ControlPanel = ({
           <FormColors onChangeColor={onChangeColor} theme={theme} />
         </div>
 
-        <FormLayouts
+        <FormRadioLayouts
+          onChange={onChangeRadioLayout}
+          layout={selectedRadioLayout}
+        />
+
+        <FormSelectLayout
           selectedLayout={selectedLayout}
           setSelectedLayout={setSelectedLayout}
           onSelect={onSelect}

@@ -7,9 +7,15 @@ import ColsTwoToOne from "../components/pdf/ColsTwoToOne"
 import ColsOneToOne from "../components/pdf/ColsOneToOne"
 import data from "../data/dataop"
 // import data from "../data/data"
+import Download from "./control/Download"
 import ControlPanel from "../components/control/ControlPanel"
 import { PdfThemeContext } from "../hooks/usePdfTheme"
-import { useTheme, useContent, useSelectedLayout } from "../lib/store"
+import {
+  useTheme,
+  useContent,
+  useSelectedLayout,
+  useSelectedRadioLayout,
+} from "../lib/store"
 import { themeDefault } from "../lib/colors.js"
 
 const App = () => {
@@ -17,6 +23,8 @@ const App = () => {
   const [submitDisabled, setSubmitDisabled] = useState(false)
   const [theme, setTheme] = useTheme({ themeDefault })
   const [selectedLayout, setSelectedLayout] = useSelectedLayout("ColsOneToOne")
+  const [selectedRadioLayout, setSelectedRadioLayout] =
+    useSelectedRadioLayout("ColsTwoToOne")
 
   const onChangeColor = event => {
     setTheme(prevState => ({
@@ -24,7 +32,6 @@ const App = () => {
       [event.target.name]: event.target.value,
     }))
   }
-
   const onSubmit = event => {
     event.preventDefault()
     setContent(event.target.elements.content.value)
@@ -39,6 +46,10 @@ const App = () => {
     setSelectedLayout(event.value)
   }
 
+  const onChangeRadioLayout = event => {
+    setSelectedRadioLayout(event.target.value)
+  }
+
   const layoutOptions = {
     ColsOneToOne: ColsOneToOne,
     ColsOneToTwo: ColsOneToTwo,
@@ -46,7 +57,9 @@ const App = () => {
     LessDense: LessDense,
   }
 
-  const LayoutComponent = layoutOptions[selectedLayout]
+  //change to active select/radio layout choosing method
+  // const LayoutComponent = layoutOptions[selectedLayout]
+  const LayoutComponent = layoutOptions[selectedRadioLayout]
 
   return (
     <div>
@@ -62,9 +75,11 @@ const App = () => {
               submitDisabled={submitDisabled}
               onChangeContent={onChangeContent}
               onSelect={onSelect}
-              selectedLayout={selectedLayout}
-              setSelectedLayout={setSelectedLayout}
+              onChangeRadioLayout={onChangeRadioLayout}
+              selectedLayout={selectedRadioLayout}
+              // selectedLayout={selectedLayout}
               LayoutComponent={LayoutComponent}
+              selectedRadioLayout={selectedRadioLayout}
             />
           </Col>
           <Col>
@@ -78,6 +93,11 @@ const App = () => {
                 <LayoutComponent data={JSON.parse(content)} />
               </PdfThemeContext.Provider>
             </PDFViewer>
+            <Download
+              data={data}
+              theme={theme}
+              LayoutComponent={LayoutComponent}
+            />
           </Col>
         </Row>
       </Container>
